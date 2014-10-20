@@ -270,16 +270,16 @@
 				<tr class="even">
 					<td></td>
 					<td>
-						A me pare evidente. Rientra nell'ambito delle propriet&#224; logiche delle transazioni, alle quali facciamo comunemente riferimento con l'acronimo &quot;ACID&quot;.
+						Mi sembra ci sia una Race Condition, a meno che sotto non ci sia un database &quot;ACID&quot;.
 						<br />
 						<br />
-						Due utenti possono eseguire l'operazione in maniera concorrente.
+						Immagino che su quel servizio bancario due utenti possono eseguire operazioni concorrentemente.
 						<br />
 						Il primo va a prelevare, supponiamo, 100 EURO.
 						<br />
 						Se il bilancio attuale &#232; di 1000 EURO, all'interno di &quot;new_balance&quot; trover&#242; 900 EURO.
 						<br />
-						Ora, prima che l'utente abbia scritto su database il nuovo &quot;amount&quot;, un altro utente,
+						Ora, prima che sul database venga scritto il nuovo &quot;amount&quot;, un altro utente,
 						con l'accesso al medesimo conto, potrebbe voler ritirare altre 100 EURO, attingendo da
 						un bilancio che, ahim&#233;, risulter&#224; sempre di 1000 EURO.
 						<br />
