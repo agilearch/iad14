@@ -265,21 +265,27 @@
 				<tr class="even">
 					<td></td>
 					<td>
-						Mi sembra ci sia una Race Condition, a meno che sotto non ci sia una gestione transazionale 
-                        con un database &quot;ACID&quot;.
+						Mi sembra ci sia una Race Condition. A meno che, naturalmente, sotto non ci sia 
+                        una gestione transazionale con un database &quot;ACID&quot;.
 						<br />
 						<br />
-						Immagino che su quel servizio bancario due utenti possono eseguire operazioni concorrentemente.
+						Il problema nasce se quel servizio bancario permette connessioni concorrenti.
 						<br />
-						Il primo va a prelevare, supponiamo, 100 EURO.
+						Provo a spiegare il problema.
+                        <br /><br />
+                        Mettiamo che sul conto ci siano 1000 EURO. 
+                        <br />
+                        Mi connetto e prelevo 100 EURO.
 						<br />
-						Se il bilancio attuale &#232; di 1000 EURO, all'interno di &quot;new_balance&quot; trover&#242; 900 EURO.
+						&quot;balance&quot; vale 1000, &quot;amount&quot; vale 100, quindi nella variabile
+                        &quot;new_balance&quot; avr&#242; 900 EURO.
 						<br />
-						Ora, prima che sul database venga scritto il nuovo &quot;amount&quot;, un altro utente,
-						con l'accesso al medesimo conto, potrebbe voler ritirare altre 100 EURO, attingendo da
-						un bilancio che, ahim&#233;, risulter&#224; sempre di 1000 EURO.
+						Ora, prima di scrivere &quot;new_balance&quot; sul db, con una seconda connessione,
+						accedo al medesimo conto, e chiedo di nuovo di ritirare 100 EURO. 
+                        <br /><br />
+                        La prima riga viene eseguita di nuovo e dal db si risulta che il conto sia ancora di 1000 EURO.
 						<br />
-						All'atto del &quot;salvataggio&quot;, il bilancio risulter&#224; 900 EURO.</td>
+						Fantastico! Ritiro 200 euro, ma ne ne vengono addebitati solo 100!</td>
 					<td></td>
 				</tr>
 				<tr class="odd">
@@ -291,9 +297,9 @@
                         In quel caso, la race condition si manifestava, perché il database era MongoDb, che non è
                         ACID, e perch&#233; nel codice non veniva usato alcun concetto di transazione.
                         <br /><br />
-						Quel codice apparteneva a Flexcoin, una &quot;Bitcoin bank&quot;.
+						Ecco: quel codice apparteneva a Flexcoin, una &quot;Bitcoin bank&quot;.
                         <br />
-                        Ecco: un attacker &#232; riuscito a sfruttare la Race Condition e a svuotare i forzieri della banca,
+                        Un attacker &#232; riuscito a sfruttare la Race Condition e a svuotare i forzieri della banca,
                         mezzo milione di dollari, cos&#236; Flexcoin ha chiuso i battenti a marzo di quest'anno.
                         <br />
                         Impressionante, non trovi?
