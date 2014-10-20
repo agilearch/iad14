@@ -236,13 +236,8 @@
 						<br />
 						A tal proposito, vorrei raccontarti un aneddoto.
 						<br />
-						Flexcoin, una &quot;Bitcoin bank&quot;, ha chiuso i battenti a marzo di quest'anno. Vuoi sapere perch&#233;?
-						<br />
-						Beh, un attacker &#232; riuscito a sfruttare una falla nel codice che permetteva
-						trasferimenti tra utenti &quot;flexcoin&quot;.
-						<br />
-						Vorrei mostrati uno snippet di codice che illustra il problema quale
-						faccio riferimento:</td>
+						Vorrei mostrati uno snippet di codice:
+                        </td>
 				</tr>
 				<tr class="odd">
 					<td>YYY</td>
@@ -292,13 +287,23 @@
 					<td></td>
 					<td>
 						Impeccabile.
-						<br />
-						Se ci pensi bene, tutto ci&#242; rimanda ad un fallimento quasi &quot;sociale&quot;, ovvero
+                        <br />
+                        In quel caso, la race condition si manifestava, perché il database era MongoDb, che non è
+                        ACID, e perch&#233; nel codice non veniva usato alcun concetto di transazione.
+                        <br /><br />
+						Quel codice apparteneva a Flexcoin, una &quot;Bitcoin bank&quot;.
+                        <br />
+                        Ecco: un attacker &#232; riuscito a sfruttare la Race Condition e a svuotare i forzieri della banca,
+                        cos&#236; Flexcoin ha chiuso i battenti a marzo di quest'anno.
+                        <br />
+                        Impressionante, non trovi?
+						<br /><br />
+						Se ci pensi bene, tutto ci&#242;  un fallimento quasi &quot;sociale&quot;: &#232;
 						il fallimento di un'accademia dei sistemi distribuiti che ha educato gli sviluppatori
-						e che li ha equipaggiati con &quot;too clear-thinking frameworks&quot;.
+						e li ha equipaggiati con &quot;too clear-thinking frameworks&quot;.
 						Nella speranza, come sostieni tu, che potessero occuparsi in autonomia
-						dello sviluppo del singolo componente; il quale, nella fattispecie, &#232; doveva essere
-						l'operazione di prelievo di bitcoin.</td>
+						dello sviluppo del singolo componente; il quale, nella fattispecie, &#232
+						l'operazione di prelievo.</td>
 				</tr>
 				<tr class="even">
 					<td></td>
