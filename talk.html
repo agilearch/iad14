@@ -341,11 +341,11 @@
 				<tr class="even">
 					<td></td>
 					<td>
-						Credo che ci troviamo di fronte ad un caso piuttosto comune di &quot;Race Condition&quot;.
-						Naturalmente, a patto che l'engine utilizzato per la persistenza non supporti transazioni ACID e che il codice definisca opportunamente lo &quot;scope&quot; della transazione e un appropriato livello di isolamento.
+						Credo che ci possa essere una &quot;Race Condition&quot;.
+						Naturalmente, a patto che l'engine di persistenza non supporti transazioni ACID.
 						<br />
 						<br />
-						Il problema emerge nel momento in cui il servizio bancario offre concorrenza nell'operazione descritta dallo snippet, sia che si tratti di un contesto multithreaded o, semplicemente, di due o più istanze dell'applicazione bilanciate in qualche modo.
+						Il problema emerge nel momento in cui il servizio bancario permette l'accesso concorrente.
 						<br />
 						Provo comunque a descrivere il problema.
 						<br /><br />
@@ -370,7 +370,7 @@
 					<td>
 						Impeccabile.
 						<br />
-						In quel caso, la Race Condition si manifestava poiché l'engine al quale era delegata la persistenza era MongoDB, il quale non supporta transazioni ACID, benché offra, comunque, la possibilità di effettuare operazioni di decremento atomiche.
+						In quel caso, la Race Condition si manifestava poiché l'engine era MongoDB, che non supporta transazioni ACID.
 						<br /><br />
 						Ecco: quel codice apparteneva a Flexcoin, una &quot;Bitcoin bank&quot;.
 						<br />
