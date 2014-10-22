@@ -1,7 +1,7 @@
-C’è davvero bisogno di Software Architect?
+C’è davvero bisogno del Software Architect?
 
 È possibile farne a meno, in un team agile? 
-E se servono, devono occuparsi di definire le linee guida o è preferibile siano dei coach?
+E se serve, deve occuparsi di definire le linee guida o è preferibile sia un coach?
 
 In questa sessione giocheremo a far scontrare due posizioni diametralmente opposte: una visione un po' cravattona ed una più “Agile”.
 
