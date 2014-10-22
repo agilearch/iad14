@@ -122,7 +122,7 @@
 						<td></td>
 					</tr>
 				<tr class="odd">
-					<td>xxx</td>
+					<td>8</td>
 					<td></td>
 					<td>
 						Era inevitabile: sei ricorso alla classica similitudine tra architettura civile ed architettura software.
@@ -150,7 +150,7 @@
 							In software we have only a few decades of history and our designs are often not public</em>&quot;.</p></td>
 				</tr>
 				<tr class="odd">
-					<td>xxx</td>
+					<td>9</td>
 					<td>
 					Uhm. Cosa stai cercando di dire? Che l'evoluzione di Facebook sia frutto di design emergente, a colpi di TDD?
 					<br />
@@ -196,23 +196,13 @@
 						<td></td>
 				</tr>
 				<tr class="even">
-					<td>8</td>
+					<td>10</td>
 					<td></td>
 					<td>
-						No, naturalmente; ma questo non necessariamente va ad implicare tutto sia da attribuirsi alla centralizzazione del pensiero.
+						No, naturalmente; ma questo non necessariamente significa che tutto sia da attribuirsi alla centralizzazione del pensiero.
 						<br />
 						Possiamo ritagliarci qualche minuto per parlare, appunto, di centralizzazione? Perché, soprattutto nell'ultimo decennio, le critiche verso la gestione centralizzata e formale dell'architettura non sono certo mancate. Leggi quanto segue:
 						<br /><br />
-						&quot;<em>Negli ultimi anni, nel mondo, l'introduzione di &quot;Enterprise Architecture&quot; è stata un'iniziativa che ha coinvolto la maggioranza delle istituzioni finanziarie (banche, compagnie di assicurazione, governi eccetera), e il processo di adozione è tutt'ora in corso. Io ho lavorato con queste aziende, e le ho aiutate ad evitare gli errori più gravi. Ecco: la maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot;.
-						<br /><br />
-						Ci crederesti? Questa è una frase di Ivar Jacobson, uno degli autori di UML e di RUP.</td>
-				</tr>
-				<tr class="odd">
-					<td>9</td>
-					<td></td>
-					<td>
-						Ma, vedi? Jacobson non è il solo a muovere critiche alla definizione di IEEE. Senti questa, a proposito dell'<em>alto livello concettuale del sistema e sui suoi componenti più significativi</em>:
-						<p>
 							&quot;<em>Non esiste il più alto livello concettuale di un sistema. Clienti e sviluppatori hanno visioni differenti del medesimo. Ad esempio, ai clienti importa ben poco della struttura dei componenti software.
 							<br />
 							Ecco, forse l'architettura può essere intesa come il più alto livello concettuale che gli sviluppatori hanno del sistema.
@@ -223,15 +213,26 @@
 						Prendi, ad esempio, una classica applicazione bancaria 3-tier. Ipoteticamente, il database potrebbe rappresentare una componente molto significativa dell'architettura.
 						<br />
 						E, contemporaneamente, in un'applicazione che elabori immagini mediche, può darsi che lo stesso identico database non venga incluso nell'architettura, perché gran parte della complessità è spostata sul fronte dell'elaborazione delle immagini, non nella loro persistenza: caricare e salvare le immagini sarà una responsabilità demandata ad uno strato di software che la maggioranza degli sviluppatori tenderà ad ignorare.
-						<br />
+						<br /><br />
+						Ci crederesti? Questa è una frase di Ivar Jacobson, uno degli autori di UML e di RUP.</td>
+				</tr>
+				<tr class="odd">
+					<td>10</td>
+					<td></td>
+					<td>
+						Ma, vedi? Jacobson non è il solo a muovere critiche alla definizione di IEEE. Senti questa, a proposito dell'<em>alto livello concettuale del sistema e sui suoi componenti più significativi</em>:
+						<p>
+                          &quot;<em>Negli ultimi anni, nel mondo, l'introduzione di &quot;Enterprise Architecture&quot; è stata un'iniziativa che ha coinvolto la maggioranza delle istituzioni finanziarie (banche, compagnie di assicurazione, governi eccetera), e il processo di adozione è tutt'ora in corso. Io ho lavorato con queste aziende, e le ho aiutate ad evitare gli errori più gravi. Ecco: la maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot;
+
+						
 						Ma la citazione si spinge addirittura oltre.
-						<br />
-						Egli sostiene che l'architettura ha molto più a che fare con la conoscenza condivisa e con una visione comune. E, ancora, che l'architettura ha, in qualche modo, molte connotazioni &quot;sociali&quot;, oltre a quelle tecniche o tecnologiche.
+						<br /><br />
+						Jacobson sostiene che l'architettura abbia molto più a che fare con la conoscenza condivisa e con una visione comune. E, ancora, che l'architettura ha, in qualche modo, molte connotazioni &quot;sociali&quot;, oltre a quelle tecniche o tecnologiche.
 						<br />
 						Lo avresti mai detto?</td>
 				</tr>
 				<tr class="even">
-					<td>10</td>
+					<td>11</td>
 					<td></td>
 					<td>
 						Permettimi infine di farti notare quanto la citazione che ti ho mostrato insista particolarmente sugli &quot;sviluppatori&quot;. Dopo tutto, sembra che l'architettura sia un argomento che dovrebbe coinvolgerli direttamente.</td>
@@ -268,7 +269,7 @@
 						</td>
 				</tr>
 				<tr class="odd">
-					<td>11</td>
+					<td>13</td>
 					<td>
 						Ok, capisco.
 						<br />
@@ -318,22 +319,9 @@
 						</td>
 				</tr>
 				<tr class="odd">
-					<td>YYY</td>
+					<td>14</td>
 					<td></td>
 					<td>
-						[TODO: aggiungere alle slide.]
-						<br />
-						<br />
-						<span style="font-family: courier new;">
-							balance = database.read("account-number")
-							<br />
-							new_balance = balance - amount
-							<br />
-							database.write("account-number", new_balance)
-							<br />
-							dispense_cash(amount) // or send bitcoins to customer
-						</span>
-						<br />
 						<br />
 						Come puoi notare, si tratta di una classica operazione di &quot;prelievo&quot; fondi.
 						Un ATM, insomma...
@@ -403,7 +391,7 @@
 						Possiamo riassumere asserendo che facciamo riferimento a due figure molto differenti di architetto?</td>
 				</tr>
 				<tr class="odd">
-					<td>12</td>
+					<td>15</td>
 					<td>
 						Sì, il mio architetto è la persona che prende le decisioni importanti, quelle di più alto livello.
 						Ad esempio, è colui che si preoccupa di adottare un engine che supporti transazioni ACID, 
@@ -413,7 +401,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>13</td>
+					<td>16</td>
 					<td></td>
 					<td>
 						Chiamiamo il mio <em>Architectus Ozyrus</em>.
@@ -421,7 +409,7 @@
 						Il mio architetto non così interessato a prendere decisioni importanti.</td>
 				</tr>
 				<tr class="odd">
-					<td>14</td>
+					<td>17</td>
 					<td></td>
 					<td>
 						L'attività più importante dell'architetto <em>Ozyrus</em> consiste nel fungere da mentore per i team, in modo tale da consentire a ciascuno dei loro membri di raggiungere un livello di competenze tale da permettergli di affrontare autonomamente problematiche sempre più complesse.
@@ -429,13 +417,13 @@
 						Incrementare le abilità dei team consente all'architetto di svincolarsi dall'incombenza di fungere da solo &quot;decision maker&quot; e rimuove il rischio di gravare sull'intero processo come &quot;collo di bottiglia&quot;.</td>
 				</tr>
 				<tr class="even">
-					<td>15</td>
+					<td>18</td>
 					<td></td>
 					<td>
 						La metafora che mi sembra più appropriata è quella proposta da Mike Two: l'architetto è come una &quot;guida alpina&quot;; è la persona più skillata, che può insegnare agli altri membri come muoversi ed è sempre un riferimento nei momenti di maggior difficoltà.</td>
 				</tr>
 				<tr class="odd">
-					<td>16</td>
+					<td>19</td>
 					<td></td>
 					<td>
 						In questo senso, credo che il valore di un architetto sia inversamente proporzionale alla quantità di decisioni che è costretto a prendere.
@@ -446,7 +434,7 @@
 					</td>
 				</tr>
 				<tr class="even">
-					<td>17</td>
+					<td>20</td>
 					<td>Quindi, mi stai parlando di una figura che si adopera per rendersi superflua?</td>
 					<td></td>
 				</tr>
@@ -456,18 +444,18 @@
 					<td>In un certo senso, sì.</td>
 				</tr>
 				<tr class="even">
-					<td>18</td>
+					<td>21</td>
 					<td>
 						A me appare tutto piuttosto fumoso e un po' distante dalle reali esigenze delle aziende enterprise, ma ne colgo il senso.
 						<br />
-						Diciamo che il mio architetto sul piano operativo è meno impegnato del tuo. Magari è più interessato a creare una visione comune, declinata dalla scelte di business.
+						Diciamo che il mio architetto sul piano operativo è meno impegnato del tuo. Magari è più interessato a creare una visione comune, allineato alle scelte di business.
 						<br />
 						Forse non è presente nelle singole scalate e lascia questo compito a degli alpini professionisti. Ecco, diciamo che il mio architetto è quello che si preoccupa di fornire alla spedizione una cartina dettagliata ed affidabile. La tua guida è indispensabile ma - ecco, non offenderti - senza una mappa porterà l'intera spedizione a prendere una direzione sbagliata.
 						<br />
 						Sai perché credo che un lavoro di design up-front sia davvero molto importante?</td>
 				</tr>
 				<tr class="odd">
-					<td>19</td>
+					<td>22</td>
 					<td>
 						Perché esistono delle decisioni che vanno prese con largo anticipo, prima che sia troppo tardi; prima di scoprire che le fondamenta sulle quali il progetto si reggeva erano inconsistenti.
 						<br />
@@ -475,13 +463,13 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>20</td>
+					<td>23</td>
 					<td></td>
 					<td>
 						Probabilmente hai toccato il punto: puoi vedere le metodologie &quot;Agile&quot; come un mezzo volto al contenimento della complessità, riducendo l'irreversibilità.</td>
 				</tr>
 				<tr class="odd">
-					<td>21</td>
+					<td>24</td>
 					<td>
 						Di nuovo, mi sembra un po' troppo vago.
 						<br />
@@ -493,7 +481,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>22</td>
+					<td>25</td>
 					<td></td>
 					<td>
 						La scommessa di <em>eXtreme Programming</em> è proprio questa: se la curva di costo fosse più appiattita, ci comporteremmo in modo completamente differente da come abbiamo sempre fatto. Cercheremmo di rimandare le decisioni al &quot;Last Responsible Moment&quot;, con il fine di massimizzare il tempo a disposizione per indagare il problema.
@@ -508,7 +496,7 @@
 						Questa è la scommessa. E questo, capisci bene, cambia molto il ruolo dell'architetto, nel contesto del processo di sviluppo.</td>
 				</tr>
 				<tr class="odd">
-					<td>23</td>
+					<td>26</td>
 					<td>
 						Ci mancherebbe, sono d'accordo. Ma, in effetti, non vedo come Enterprise Architecture possa rifiutare tecniche quali Test-Driven Development, tanto per citarne una.
 						<br />
@@ -522,7 +510,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>24</td>
+					<td>27</td>
 					<td>
 						Io suggerisco che si ricorra ad un'autorità, un esperto che possa occuparsi di congegnare il sistema senza doversi occupare dei dettagli implementativi, perché è evidente che il suo tempo sarà particolarmente prezioso.
 						<p style="color: blue">
@@ -531,29 +519,29 @@
 					<td></td>
 				</tr>
 				<tr class="odd">
-					<td>25</td>
+					<td>28</td>
 					<td></td>
 					<td>
 						Al contrario, io ritengo che questo approccio porti a rallentamenti e finger pointing. Con un sistema simile è chiaro che, nell'ambito di in una discussione, chi avrà maggiore autorità ne uscirà sempre vincitore. Anzi, peggio: gli sviluppatori verranno accusati di non essere buoni &quot;team player&quot;, solo perché hanno contestato l'architetto</td>
 				</tr>
 				<tr class="even">
-					<td>26</td>
+					<td>29</td>
 					<td></td>
 					<td>
 						Piuttosto, propongo che l'architetto sia coinvolto anche nell'implementazione. È necessario che egli sia costantemente informato sui cambiamenti e sull'impatto che questi producono sul design.</td>
 				</tr>
 				<tr class="odd">
-					<td>27</td>
+					<td>30</td>
 					<td>
 						Esasperando le diversità dei due approcci, mi sembra di capire che nodo della questione risieda nel fatto che io propongo la figura di un architetto dedicato</td>
 				</tr>
 				<tr class="even">
-					<td>28</td>
+					<td>31</td>
 					<td></td>
 					<td>E io faccio invece leva sulla condivisione della responsabilità</td>
 				</tr>
 				<tr class="odd">
-					<td>29</td>
+					<td>32</td>
 					<td>Il mio approccio pone maggiore focus sul design-upfront.</td>
 					<td></td>
 				</tr>
@@ -563,7 +551,7 @@
 					<td>Il mio su un'architettura evolutiva.</td>
 				</tr>
 				<tr class="odd">
-					<td>30</td>
+					<td>33</td>
 					<td>Oppure, per usare le parole del &quot;Manifesto Agile&quot;, io faccio affidamento sulla <em>Comprehensive Documentation</em>.</td>
 					<td></td>
 				</tr>
@@ -581,7 +569,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>31</td>
+					<td>34</td>
 					<td></td>
 					<td>
 					Certamente.
@@ -589,13 +577,13 @@
 					Se me lo concedi, vorrei avvalermi degli <em>Influence Diagram</em>. Considera il rapporto tra il mangiare e il prendere peso. Più mangio, più ingrasso. è una influenza positiva. La rappresento in questo modo:</td>
 				</tr>
 				<tr class="odd">
-					<td>32</td>
+					<td>35</td>
 					<td></td>
 					<td>
 						Il rapporto tra l'esercizio fisico e il peso è opposta. È Un'influenza negativa. La rappresento sovrapponendo un cerchio alla linea. Mi segui?</td>
 				</tr>
 				<tr class="even">
-					<td>33</td>
+					<td>36</td>
 					<td></td>
 					<td>
 						Ok, come puoi notare ho rappresentato un circolo vizioso.
@@ -618,7 +606,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>34</td>
+					<td>37</td>
 					<td></td>
 					<td>
 						Perché questo ha molto a che fare con i feedback che un architetto può ricevere. Lascia che ti spieghi. <br />
@@ -632,7 +620,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>35</td>
+					<td>38</td>
 					<td></td>
 					<td>
 						Ecco, arriviamo al punto del perché l'architetto debba essere coinvolto anche nello sviluppo.
@@ -655,7 +643,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>36</td>
+					<td>39</td>
 					<td></td>
 					<td>
 						Guarda, ti mostro come sia possibile invertire la tendenza.
@@ -669,7 +657,7 @@
 						Come puoi constatare, il modello che propongo alimenta un circolo virtuoso!</td>
 				</tr>
 				<tr class="odd">
-					<td>37</td>
+					<td>40</td>
 					<td>Quindi, quale è l'alternativa ad &quot;Enterprise Architecture&quot;?</td>
 					<td></td>
 				</tr>
@@ -694,7 +682,7 @@
 						Se ci pensi bene, Amazon™ rappresenta un caso molto significativo.</td>
 				</tr>
 				<tr class="odd">
-					<td>38</td>
+					<td>41</td>
 					<td>
 						Mi trovi molto d'accordo.
 						<br />
@@ -708,7 +696,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>39</td>
+					<td>42</td>
 					<td></td>
 					<td>Sì. Voi cosa ne pensate? Ne parliamo?</td>
 				</tr>
