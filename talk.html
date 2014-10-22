@@ -152,14 +152,45 @@
 				<tr class="odd">
 					<td>xxx</td>
 					<td>
-					  Uhm. Cosa stai cercando di dire? Che l'evoluzione di Facebook sia frutto di design emergente, a colpi di TDD?
-					  <br />
-					  Non puoi pensare che un'azienda come Google, quando decide di aggredire il mercato mobile e inizia a sviluppare 
-					  un sistema operativo come Android, non parta da una strategia aziendale, nella testa dell'amministratore delegato
-					  e non la trasformi in una road map tecnologica, controllata da un ristretto gruppo di persone.
-					  Cioè, non puoi pensare che tutto si riduca a far emergere l'architettura con cicli di red/green/refactor.
-						<p style="color: blue">
-							[TODO] qui video su Enterprise Architecture
+					Uhm. Cosa stai cercando di dire? Che l'evoluzione di Facebook sia frutto di design emergente, a colpi di TDD?
+					<br />
+					Ti racconto una storia.
+					<br />
+					<p>
+						Michele lavora in un'azienda enterprise. A causa di nuove richieste di business, 
+						Michele ha bisogno di dati molto specifici. Purtroppo, i dati di cui ha bisogno sono distribuiti su
+						diverse applicazioni. Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
+						informazioni dalle applicazioni A, B e C e le raccoglie in un file Excel in una directory, così che Michele
+						sia in grado di leggere tutti i dati sul suo spreadsheet e svolgere il suo lavoro.
+						<br />
+						Michele si rende conto di aver bisogno di quei dati con un aggiornamento quotidiano, così chiede che
+						il programma di raccolta venga eseguito, automaticamente, ogni giorno. Così, un sistemista crea un
+						daily job per Michele. Ecco, il risultato è che, specificatamente per Michele,
+						è stato creato un application workflow, dipendente da un job e da tre applicazioni. 
+						<br />
+						Il fatto è che Michele non è il solo in azienda a voler aumentare la propria produttività.
+						Moltiplica la situazione di Michele per un migliaio di volte. Io chiamo il risultato Architettura a palla di peli.
+						Vedila come un'enorme massa, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
+						è in grado di districarla, e nessuno ne ha il controllo.
+						<br />
+						Adesso, mettiamo di aver bisogno di sostituire una delle core application, perché la sua tecnologia
+						è datata e il fornitore smetterà di fornire supporto. Ci sarà difficile, se non impossibile,
+						capire quali siano le connessioni con quell'applicazione. Ci troviamo una rete infinita di dipendenze,
+						e ironicamente siamo noi stessi ad averla creata, anno dopo anno. Ognuna delle connessioni era
+						perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente
+						contorto che risulta totalmente impossibile fare modifiche in un punto senza provocare danni in un altro.
+						<br />
+						Ecco, è qui che opera Enterprise Architecture: aiuta a creare un ecosistema IT organizzato in modo
+						che ognuno abbia la libertà di apportare dei miglioramenti, così che ci sia sempre spazio
+						per l'innovazione. L'architettura fa in modo che l'ecosistema resti comunque sempre robusto, flessibile ed 
+						efficiente. Questo richiede che esista un processo per mantenere le cose ordinate. 
+                      </p>
+						Ecco, Nicola: non puoi pensare che un'azienda come Google, quando decide di aggredire il mercato mobile e inizia a sviluppare 
+						un sistema operativo come Android, non parta da una strategia aziendale, nella testa dell'amministratore delegato
+						e non la trasformi in una road map tecnologica. Ti tornerà che il controllo di un ristretto gruppo di persone
+						sia molto più sensato di una totale mancanza di coordinamento.
+						<br />
+						Cioè, non puoi pensare che tutto si riduca a far emergere l'architettura con cicli di red/green/refactor.
 					<td></td>
 				</tr>
 				<tr class="even">
