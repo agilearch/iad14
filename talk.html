@@ -13,6 +13,12 @@
 			.talktable tr td {
 				padding:.2em;
 			}
+            .quotation {
+                background:#ccc;
+                margin-left:4em;
+                margin-right:4em;
+                padding:2em;
+            }
 		</style>
 	</head>
 	<body>
@@ -81,18 +87,24 @@
 					<td>5</td>
 					<td>
 						Sì, è così, in effetti. Cioè, in effetti credo proprio che un livello di astrazione elevato sia davvero necessario, nel software.
-                        <br />
+						<br />
 						E mi stupisco che tu non lo pensi. Perché non è una questione di sviluppatori contro architetti.
 						<br />
-                        È una questione di avere un'integrità concettuale.
+						È una questione di avere un'<em>integrità concettuale</em>.
 						<br /><br />
 						Senti, ti propongo questa riflessione, che mi trova molto d'accordo:
 						<br /><br />
-						&quot;<em>Per garantire l'integrità concettuale è necessario un pensiero centrale</em>&quot;.
+                        <div class="quotation">
+						    &quot;<em>Per garantire l'integrità concettuale è necessario un pensiero centrale</em>&quot;.
+                        </div>
 						<br /><br />
 						Non sto parlando di una singola persona, eh! Anzi, se il pensiero centrale fosse di quella di un comitato, tanto di guadagnato.
 						<br /><br />
-						&quot;<em>L'esigenza nasce dal fatto che l'architetto ritiene che i membri di un team non abbiano maturato sufficienti competenze per assumere un certo tipo di decisioni. Spesso, queste devono essere prese con larghissimo anticipo, ragion per cui l'architetto deve essere in grado di fornire a tutti un piano da seguire.</em>&quot;.</td>
+                        <div class="quotation">
+						    &quot;<em>L'esigenza nasce dal fatto che l'architetto ritiene che i membri di un team non abbiano maturato sufficienti competenze per assumere un certo tipo di decisioni. Spesso, queste devono essere prese con larghissimo anticipo, ragion per cui l'architetto deve essere in grado di fornire a tutti un piano da seguire.</em>&quot;.
+                        </div>
+                        </td>
+
 					<td></td>
 				</tr>
 				<tr class="odd">
@@ -103,7 +115,10 @@
 						<br />
 						Quindi, secondo te l'architettura è una ricetta alla quale attenersi scrupolosamente?
 						<br /><br />
-						&quot;<em>La qualità di una torta la si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole</em>&quot;.</td>
+                        <div class="quotation">
+						    &quot;<em>La qualità di una torta la si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole</em>&quot;.
+                        </div>
+                    </td>
 				</tr>
 					<tr class="even">
 						<td>7</td>
@@ -112,28 +127,31 @@
 							<br /><br />
 							Se ti piacciono le citazioni, allora ti propongo questa a proposito dell'importanza delle ricette e dei piani:
 							<br /><br />
-							&quot;<em>Costruire un sistema enterprise di grandi dimensioni e complessità senza un <strong>Enterprise Architect</strong> è come tentare di costruire una città senza un piano regolatore.
-							<br /><br />
-							È possibile costruire una città senza un piano?
-							<br />
-							Probabilmente.
-							<br /><br />
-							E tu andresti a vivere in quella città?
-							<br />
-							Probabilmente no.
-							<br /><br />
-							Ovviamente, un architetto che disegni un piano regolatore non garantisce una città vivibile: semplicemente, ne aumenta le probabilità.</em>&quot;</td>
+                            <div class="quotation">
+								&quot;<em>Costruire un sistema enterprise di grandi dimensioni e complessità senza un <strong>Enterprise Architect</strong> è come tentare di costruire una città senza un piano regolatore.
+								<br /><br />
+								È possibile costruire una città senza un piano?
+								<br />
+								Probabilmente.
+								<br /><br />
+								E tu andresti a vivere in quella città?
+								<br />
+								Probabilmente no.
+								<br /><br />
+								Ovviamente, un architetto che disegni un piano regolatore non garantisce una città vivibile: semplicemente, ne aumenta le probabilità.</em>&quot;
+							</div>
+                        </td>
 						<td></td>
 					</tr>
 				<tr class="odd">
 					<td>8</td>
 					<td></td>
 					<td>
-						Era inevitabile: sei ricorso alla classica similitudine tra architettura civile ed architettura software.
+						Molto originale: sei ricorso alla classica similitudine tra architettura civile ed architettura software.
 						<br />
 						Purtroppo penso sia una metafora che regge fino a un certo punto.
 						<br /><br />
-						Guarda: queste due immagini ti danno un'idea di come sia cambiata Facebook, dai suoi albori, pochi anni fa
+						Guarda: queste due immagini ti danno un'idea di come sia cambiata Facebook, dai suoi albori, pochi anni fa,
 						ad oggi. Una trasformazione pesantissima, non trovi?
 						<br /><br />
 						Se, al contrario, guardi, non so, l'Empire State Building, non trovi cambiamenti architetturali così imponenti.
@@ -151,27 +169,38 @@
 					Ti racconto una storia.
 					<br />
 					<p>
-						Michele lavora in un'azienda enterprise. A causa di nuove richieste di business, 
-						Michele ha bisogno di dati molto specifici. Purtroppo, i dati di cui ha bisogno sono distribuiti su
-						diverse applicazioni. Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
-						informazioni dalle applicazioni A, B e C e le raccoglie in un file Excel in una directory, così che Michele
-						sia in grado di leggere tutti i dati sul suo spreadsheet e svolgere il suo lavoro.
+						Michele lavora in un'azienda enterprise, e nel suo lavoro ha sempre bisogno di dati molto specifici. 
+						Purtroppo, questi dati  sono distribuiti su diverse applicazioni. 
+                        <br />
+                        Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
+						informazioni da 3 applicazioni, A, B e C e le fornisce a Michele in un file Excel, così che lui
+						sia in grado di leggere il suo bel report e svolgere il suo lavoro.
 						<br /><br />
-						Michele si rende conto di aver bisogno di quei dati con un aggiornamento quotidiano, così chiede che
-						il programma di raccolta venga eseguito, automaticamente, ogni giorno. Così, un sistemista crea un
-						daily job per Michele. Ecco, il risultato è che, specificatamente per Michele,
-						è stato creato un application workflow, dipendente da un job e da tre applicazioni. 
+						Michele però si accorge di aver bisogno di quei dati ogni giorno. Così chiede che
+						il programma di raccolta venga eseguito, automaticamente, tutte le mattine.
+                        <br /><br />
+						Nessun problema: un sistemista crea un cron job per Michele. 
 						<br /><br />
-						Il fatto è che Michele non è il solo in azienda a voler aumentare la propria produttività.
-						Moltiplica la situazione di Michele per un migliaio di volte. Io chiamo il risultato Architettura a palla di peli.
-						Vedila come un'enorme massa, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
+						Ecco, il risultato è che, apposta per Michele,
+						è stato creato un vero Application Workflow, dipendente da 1 job e 3 applicazioni. 
+						<br /><br />
+						Il fatto, Nicola, è che Michele non è il solo in azienda a voler aumentare la propria produttività.
+                        <br />
+						Moltiplica la situazione di Michele per un migliaio di volte.
+                        <br /><br />
+                        Io chiamo il risultato Architettura a matassa.
+                        <br />
+						Vedila come un'enorme blob, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
 						è in grado di districarla, e nessuno ne ha il controllo.
 						<br /><br />
-						Adesso, mettiamo di aver bisogno di sostituire una delle core application, perché la sua tecnologia
-						è datata e il fornitore smetterà di fornire supporto. Ci sarà difficile, se non impossibile,
-						capire quali siano le connessioni con quell'applicazione. Ci troviamo una rete infinita di dipendenze,
-						e ironicamente siamo noi stessi ad averla creata, anno dopo anno. Ognuna delle connessioni era
-						perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente
+						Ora, mettiamo di aver bisogno di sostituire una delle applicazioni chiave, perché la sua tecnologia
+						è datata o perché il fornitore smetterà di fornire supporto. 
+                        <br/>
+                        Ci sarà difficile, se non impossibile, capire quali siano le connessioni con quell'applicazione.
+						<br /><br />
+						Hai una rete infinita di dipendenze, e ironicamente siamo noi stessi ad averla creata, anno dopo anno.
+                        <br />
+                        Ognuna delle connessioni era perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente
 						contorto che risulta totalmente impossibile fare modifiche in un punto senza provocare danni in un altro.
 						<br /><br />
 						Ecco, è qui che opera Enterprise Architecture: aiuta a creare un ecosistema IT organizzato in modo
@@ -195,51 +224,24 @@
 					<td>
 						No, naturalmente; ma questo non necessariamente significa che tutto sia da attribuirsi alla centralizzazione del pensiero.
 						<br />
-						Possiamo ritagliarci qualche minuto per parlare, appunto, di centralizzazione? Perché, soprattutto nell'ultimo decennio, le critiche verso la gestione centralizzata e formale dell'architettura non sono certo mancate. Leggi quanto segue:
+						Possiamo ritagliarci qualche minuto per parlare, appunto, di centralizzazione? Perché, soprattutto nell'ultimo decennio, le critiche verso la gestione centralizzata e formale dell'architettura non sono certo mancate. Senti questa:
+                        <br /><br />
+                        <div class="quotation">
+							<p>
+							  &quot;<em>Negli ultimi anni, nel mondo, l'introduzione di &quot;Enterprise Architecture&quot; è stata un'iniziativa che ha coinvolto la maggioranza delle istituzioni finanziarie (banche, compagnie di assicurazione, governi eccetera), e il processo di adozione è tutt'ora in corso. Io ho lavorato con queste aziende, e le ho aiutate ad evitare gli errori più gravi. Ecco: la maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot;
+							</p>
+						</div>
 						<br /><br />
-							&quot;<em>Non esiste il più alto livello concettuale di un sistema. Clienti e sviluppatori hanno visioni differenti del medesimo. Ad esempio, ai clienti importa ben poco della struttura dei componenti software.
-							<br />
-							Ecco, forse l'architettura può essere intesa come il più alto livello concettuale che gli sviluppatori hanno del sistema.
-							<br />
-							Cos'è che rende un componente significativo? Solo il fatto che uno sviluppatore esperto lo riconosca come tale</em>&quot;.</p>
-						Insomma, non è possibile predefinire cosa faccia parte o meno dell'architettura.
-						<br /><br />
-						Prendi, ad esempio, una classica applicazione bancaria 3-tier. Ipoteticamente, il database potrebbe rappresentare una componente molto significativa dell'architettura.
-						<br />
-						E, contemporaneamente, in un'applicazione che elabori immagini mediche, può darsi che lo stesso identico database non venga incluso nell'architettura, perché gran parte della complessità è spostata sul fronte dell'elaborazione delle immagini, non nella loro persistenza: caricare e salvare le immagini sarà una responsabilità demandata ad uno strato di software che la maggioranza degli sviluppatori tenderà ad ignorare.
-						<br /><br />
-						Ci crederesti? Questa è una frase di Ivar Jacobson, uno degli autori di UML e di RUP.</td>
-				</tr>
-				<tr class="odd">
-					<td>10</td>
-					<td></td>
-					<td>
-						Ma, vedi? Jacobson non è il solo a muovere critiche alla definizione di IEEE. Senti questa, a proposito dell'<em>alto livello concettuale del sistema e sui suoi componenti più significativi</em>:
-						<p>
-                          &quot;<em>Negli ultimi anni, nel mondo, l'introduzione di &quot;Enterprise Architecture&quot; è stata un'iniziativa che ha coinvolto la maggioranza delle istituzioni finanziarie (banche, compagnie di assicurazione, governi eccetera), e il processo di adozione è tutt'ora in corso. Io ho lavorato con queste aziende, e le ho aiutate ad evitare gli errori più gravi. Ecco: la maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot;
-
-						
-						Ma la citazione si spinge addirittura oltre.
-						<br /><br />
-						Jacobson sostiene che l'architettura abbia molto più a che fare con la conoscenza condivisa e con una visione comune. E, ancora, che l'architettura ha, in qualche modo, molte connotazioni &quot;sociali&quot;, oltre a quelle tecniche o tecnologiche.
+						Ma la citazione si spinge addirittura oltre e sostiene che l'architettura abbia molto più a che fare con la <em>conoscenza condivisa</em> e con una <em>visione comune</em>. Insomma, che l'architettura ha, in qualche modo, una connotazione più &quot;sociale&quot; che tecnica.
 						<br />
 						Lo avresti mai detto?</td>
 				</tr>
-				<tr class="even">
-					<td>11</td>
-					<td></td>
-					<td>
-						Permettimi infine di farti notare quanto la citazione che ti ho mostrato insista particolarmente sugli &quot;sviluppatori&quot;. Dopo tutto, sembra che l'architettura sia un argomento che dovrebbe coinvolgerli direttamente.</td>
-				</tr>
-
-
-
-
 				<tr class="odd">
 					<td></td>
 					<td>
 						<p>
-							Ok, molto romantico.
+							Ok, molto drammatico.
+                            <br />
 							Scommetto che l'autore di questa frase sia proprio uno di quei guru
 							&quot;agile&quot;, uno di quelli che occupano i palcoscenici delle
 							conferenze raccontando che i manager sono inutili, che il mondo
@@ -254,12 +256,9 @@
 					<td></td>
 						<td>
 							<p>
-								Beh, l'autore è <em>Ralph Johnson</em>, membro della <em>Gang Of Four</em>,
-								uno degli autori della &quot;bibbia&quot; sui <em>Design Patterns</em>.</p>
+								Beh, l'autore è <em>Ivar Jacobson</em>, uno degli autori di UML e di RUP, cioè
+                                di due degli strumenti tanto osteggiati da Agile.
 							<p>
-								Oltretutto, Johnson non sta parlando a &quot;ruota libera&quot;, poichè
-								nell'occasione vestiva proprio i panni di revisore ufficiale della definizione di IEEE di
-								<em>architettura</em>.</p>
 						</td>
 				</tr>
 				<tr class="odd">
@@ -574,7 +573,9 @@
 					<td>35</td>
 					<td></td>
 					<td>
-						Il rapporto tra l'esercizio fisico e il peso è opposta. È Un'influenza negativa. La rappresento sovrapponendo un cerchio alla linea. Mi segui?</td>
+						Il rapporto tra l'esercizio fisico e il peso è opposta: più sport faccio, meno ho problemi di peso.
+						<br/>
+						Cioè, l'esercizio fisico ha un'influenza negativa sull'aumento di peso. La rappresento sovrapponendo un cerchio alla linea. Mi segui?</td>
 				</tr>
 				<tr class="even">
 					<td>36</td>
