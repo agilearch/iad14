@@ -13,12 +13,12 @@
 			.talktable tr td {
 				padding:.2em;
 			}
-            .quotation {
-                background:#ccc;
-                margin-left:4em;
-                margin-right:4em;
-                padding:2em;
-            }
+			.quotation {
+				background:#ccc;
+				margin-left:4em;
+				margin-right:4em;
+				padding:2em;
+			}
 		</style>
 	</head>
 	<body>
@@ -50,22 +50,34 @@
 					<td>2</td>
 					<td></td>
 					<td>
-						Senti, romperei il ghiaccio con una citazione di Fowler:
+						Parlaremo di architettura, partendo da due posizioni molto distanti.
 						<br /><br />
-						&quot;<em>Perfino secondo gli standard della nostra industria i termini 'architetto' ed 'architettura' sono parole terribilmente sovraccaricate di significati</em>&quot;.</td>
+						Sapete meglio di me che Agile è nata come reazione ad un certo modo un po' industriale e taylorista di vedere il software.
+						L'argomento è immenso: noi però cercheremo di parlare solo di un singolo aspetto, dell'architettura e  delle differenze che ci sono
+						tra la visione agile e la visione, per così dire, più classica.
+						<br /><br />
+						Il fatto è che l'architettura è un argomento molto vago e anche un po' fuffoso.
+						<br /><br />
+						&quot;<em>'Architetto' ed 'architettura' sono parole terribilmente sovraccaricate di significati</em>&quot;.
+						<br /><br />
+						dice Fowler.</td>
 				</tr>
 					<tr class="even">
 					<td>3</td>
 					<td>
-						È vero, Fowler ha ragione.
+						Ed è verissimo, Fowler ha ragione.
 						<br />
-						Che ne dici se iniziamo mettendoci d'accordo su un significato comune di &quot;architettura&quot;?
+						Cos'è l'archittetura? Chiedilo a 3 architetti, ti daranno 4 risposte differenti.
 						<br /><br />
-						Propongo la definizione di IEEE, che in informatica ha una certa autorità:
+						Faccio questo tentativo:
 						<br /><br />
-						&quot;<em>L'architettura è il più alto livello concettuale di un sistema nel proprio ambiente.</em>&quot;
+						<div class="quotation">
+						  &quot;<em>L'architettura è il più alto livello concettuale di un sistema nel proprio ambiente.</em>&quot;
+						  </div>
 						<br /><br />
-						È una definizione che può soddisfare anche la visione Agile?</td>
+						Questa è la definizione di IEEE. In informatica ha una certa autorità.
+						<br /><br />
+						È una definizione che può soddisfare la visione Agile?</td>
 					<td></td>
 				</tr>
 				<tr class="odd">
@@ -89,16 +101,16 @@
 						<br /><br />
 						Penso che
 						<br /><br />
-                        <div class="quotation">
-						    &quot;<em>per garantire l'integrità concettuale sia necessario un pensiero centrale</em>&quot;.
-                        </div>
+						<div class="quotation">
+							&quot;<em>per garantire l'integrità concettuale sia necessario un pensiero centrale</em>&quot;.
+						</div>
 						<br /><br />
 						Non sto parlando di una singola persona. Anzi, se il pensiero centrale fosse di quella di un comitato, tanto di guadagnato.
 						<br /><br />
 						È molto probabile che membri di un team non abbiano maturato le competenze sufficienti per 
 						prendere alcune decisioni. Parlo delle decisioni più cruciali, quelle che devono essere prese con larghissimo anticipo.
 						Per cui l'architetto, che ha questa maturità, e il tempo a disposizione, può essere in grado di fornire a tutti un piano da seguire.
-                        </td>
+						</td>
 
 					<td></td>
 				</tr>
@@ -112,10 +124,10 @@
 						<br />
 						Ma non è forse vero che...
 						<br /><br />
-                        <div class="quotation">
-						    &quot;<em>la qualità di una torta la si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole</em>&quot;.
-                        </div>
-                    </td>
+						<div class="quotation">
+							&quot;<em>la qualità di una torta la si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole</em>&quot;.
+						</div>
+					</td>
 				</tr>
 					<tr class="even">
 						<td>7</td>
@@ -124,7 +136,7 @@
 							<br />
 							Eppure, una ricetta è necessaria! Le torte non si realizzano mescolando ingredienti a caso.
 							<br /><br />
-                            <div class="quotation">
+							<div class="quotation">
 								&quot;<em>Costruire un sistema enterprise di grandi dimensioni e complessità senza un <strong>Enterprise Architect</strong> è come tentare di costruire una città senza un piano regolatore.
 								<br /><br />
 								È possibile costruire una città senza un piano?
@@ -137,7 +149,7 @@
 								<br /><br />
 								Ovviamente, un architetto che disegni un piano regolatore non garantisce una città vivibile: semplicemente, ne aumenta le probabilità.</em>&quot;
 							</div>
-                        </td>
+						</td>
 						<td></td>
 					</tr>
 				<tr class="odd">
@@ -172,36 +184,36 @@
 					<p>
 						Michele lavora in un'azienda enterprise, e nel suo lavoro ha sempre bisogno di dati molto specifici. 
 						Purtroppo, questi dati sono distribuiti su diverse applicazioni. 
-                        <br />
-                        Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
+						<br />
+						Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
 						informazioni da 3 applicazioni, A, B e C e le fornisce a Michele in un file spreadsheet, così che lui
 						sia in grado di leggere il report e svolgere il proprio lavoro.
 						<br /><br />
 						Michele, però, si accorge di aver bisogno di quei dati ogni giorno. Così chiede che
 						il programma di raccolta venga eseguito, automaticamente, tutte le mattine.
-                        <br /><br />
+						<br /><br />
 						Nessun problema: un sistemista crea un'attività schedulata per Michele. 
 						<br /><br />
 						Ecco, il risultato è che, apposta per Michele,
 						è stato creato un vero &quot;Application Workflow&quot;, dipendente da un'attività schedulata e tre applicazioni. 
 						<br /><br />
 						Il fatto, Nicola, è che Michele non è il solo in azienda a voler aumentare la propria produttività.
-                        <br />
+						<br />
 						Moltiplica la situazione di Michele per un migliaio di volte.
-                        <br /><br />
-                        Io chiamo il risultato &quot;Architettura a matassa&quot;.
-                        <br />
+						<br /><br />
+						Io chiamo il risultato &quot;Architettura a matassa&quot;.
+						<br />
 						Vedila come un'enorme blob, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
 						è in grado di districarla, e nessuno ne ha il controllo.
 						<br /><br />
 						Ora, mettiamo di aver bisogno di sostituire una delle applicazioni chiave, perché la sua tecnologia
 						è datata o perché il fornitore smetterà di fornire supporto. 
-                        <br/>
-                        Ci sarà difficile, se non impossibile, capire quali siano le connessioni con quell'applicazione.
+						<br/>
+						Ci sarà difficile, se non impossibile, capire quali siano le connessioni con quell'applicazione.
 						<br /><br />
 						Hai una rete infinita di dipendenze e, ironicamente, siamo noi stessi ad averla creata, anno dopo anno.
-                        <br />
-                        Ognuna delle connessioni era perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente
+						<br />
+						Ognuna delle connessioni era perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente
 						contorto che risulta impossibile apportare modifiche in un punto senza provocare danni in un altro.
 						<br /><br />
 						Ecco, è qui che opera <em>Enterprise Architecture</em>: aiuta a creare un ecosistema IT organizzato in modo
@@ -212,7 +224,7 @@
 						Ecco: non si può pensare che un'azienda come Google&trade;, quando decide di aggredire il mercato mobile e inizia a sviluppare 
 						un sistema operativo come Android, non parta da una strategia aziendale, nella testa dell'amministratore delegato
 						e non la trasformi in una road map tecnologica.
- 						<br />
+						<br />
 						<br />Il controllo di un ristretto gruppo di persone
 						è molto più sensato di una totale mancanza di coordinamento.
 						<br /><br />
@@ -228,8 +240,8 @@
 						No, naturalmente; ma questo non necessariamente significa che tutto sia da attribuirsi alla centralizzazione del pensiero.
 						<br />
 						Parliamo di centralizzazione? Soprattutto nell'ultimo decennio, le critiche verso una gestione centralizzata e formale dell'architettura non sono certo mancate. Enterprise Architecture è effettivamente un'iniziativa che sta coinvolgendo sempre di più la maggioranza delle istituzioni finanziarie. Eppure c'è chi sostiene:
-                        <br /><br />
-                        <div class="quotation">
+						<br /><br />
+						<div class="quotation">
 							<p>
 							  &quot;<em>La maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot;
 							</p>
@@ -257,7 +269,7 @@
 						<td>
 							<p>
 								L'autore è <em>Ivar Jacobson</em>, uno degli autori di UML e di RUP, cioè
-                                di due strumenti tipicamente molto osteggiati da &quot;Agile&quot;.
+								di due strumenti tipicamente molto osteggiati da &quot;Agile&quot;.
 							<p>
 						</td>
 				</tr>
@@ -442,9 +454,9 @@
 						Magari è più interessato a creare una visione comune, allineata alle scelte di business.
 						<br />
 						Forse non è presente nelle singole scalate e lascia questo compito a degli alpini professionisti.
-					    Ecco, diciamo che il mio architetto è quello che si preoccupa di fornire alla spedizione una cartina dettagliata ed affidabile.
+						Ecco, diciamo che il mio architetto è quello che si preoccupa di fornire alla spedizione una cartina dettagliata ed affidabile.
 						<br />
-			            La guida, in un team, è indispensabile ma, ecco, senza una mappa porterà l'intera spedizione a prendere direzioni sbagliate.
+						La guida, in un team, è indispensabile ma, ecco, senza una mappa porterà l'intera spedizione a prendere direzioni sbagliate.
 						<br />
 						Sapete perché credo che un lavoro di design up-front sia davvero molto importante?</td>
 				</tr>
@@ -454,7 +466,7 @@
 						Perché esistono delle decisioni che vanno prese con largo anticipo, prima che sia troppo tardi; prima di scoprire che le fondamenta sulle quali il progetto si reggeva erano inconsistenti. 
 <br />
 						Qui ho rappresentato le classiche fasi di sviluppo di un progetto, che vanno dal Concept, la raccolta dei requisiti,
-                        lo sviluppo e così via.
+						lo sviluppo e così via.
 						<br />
 						La mia tesi è che con il passare del tempo, il costo da sostenere per apportare una modifica aumenti. Cioè, col passare del
 						tempo aumenti l'irreversibilità del processo
@@ -524,8 +536,8 @@
 						
 						<br />
 						La buona notizia è che appiattire la curva dei costi è possibile. Non è un risultato che arriva gratuitamente,
-						ma è comunque una cosa possibile. Esistono diverse  tecniche, in programmazione,
-						che consentono di rendere economica la modifica del codice.  Test-Driven development è un esempio, ma in generale lo sono
+						ma è comunque una cosa possibile. Esistono diverse	tecniche, in programmazione,
+						che consentono di rendere economica la modifica del codice.	 Test-Driven development è un esempio, ma in generale lo sono
 						tutte le tecniche che mirano a ridurre l'accoppiamento, incrementare la coesione, evitare la regressione e distribuire la conoscenza. 
 						<br /><br />
 						Questa è la scommessa. E questo, ovviamente, cambia molto il ruolo e gli obiettivi dell'architetto. 
