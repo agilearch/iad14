@@ -53,7 +53,7 @@
 						Parlaremo di architettura, partendo da due posizioni molto distanti.
 						<br /><br />
 						Sapete meglio di me che Agile è nata come reazione ad un certo modo un po' industriale e taylorista di vedere il software.
-						L'argomento è immenso: noi però cercheremo di parlare solo di un singolo aspetto, dell'architettura e  delle differenze che ci sono
+						L'argomento è immenso: noi però cercheremo di parlare solo di un singolo aspetto: dell'architettura e delle differenze che ci sono
 						tra la visione agile e la visione, per così dire, più classica.
 						<br /><br />
 						Il fatto è che l'architettura è un argomento molto vago e anche un po' fuffoso.
@@ -67,7 +67,7 @@
 					<td>
 						Ed è verissimo, Fowler ha ragione.
 						<br />
-						Cos'è l'archittetura? Chiedilo a 3 architetti, ti daranno 4 risposte differenti.
+						Cos'è l'archittetura? Lo chiedi a 3 architetti e ti daranno 4 risposte differenti.
 						<br /><br />
 						Faccio questo tentativo:
 						<br /><br />
@@ -104,12 +104,19 @@
 							&quot;<em>Per garantire l'integrità concettuale è necessario un pensiero centrale</em>&quot;.
 						</div>
 						<br /><br />
-						Non sto parlando di una singola persona. Anzi, se possiamo contare su un comitato di persone,  tanto di guadagnato.
+						Non sto dicendo che le decisioni debbano essere prese da una singola persona, eh! Anzi, se possiamo contare
+						su un comitato di persone,tanto di guadagnato, per il pensiero centrale e per l'integrità concettuale.
 						<br /><br />
 						Perché dico che è necessaria una centralità?
-						Perché è molto probabile che i membri di un team non abbiano le competenze sufficienti per 
-						prendere certe decisioni. Parlo delle decisioni più cruciali, quelle che devono essere prese con larghissimo anticipo.
-						Per cui l'architetto, che invece ha questa maturità e, soprattutto, il tempo a disposizione, può essere in grado di fornire a tutti un piano da seguire.
+						<br />
+						Perché è molto probabile che i singoli sviluppatori di un team, occupati come sono a risolvere problemi di
+						implementazione, non abbiano il tempo e le competenze sufficienti per 
+						prendere certe decisioni.
+						<br /><br />
+						Parlo delle decisioni più cruciali, quelle che devono essere prese con larghissimo anticipo.
+						<br /><br />
+						Per cui l'architetto, che invece ha questa maturità e, soprattutto, ha il tempo a disposizione,
+						può essere in grado di fornire a tutti un piano da seguire.
 						</td>
 
 					<td></td>
@@ -121,11 +128,11 @@
 						Un piano da seguire?
 						<br />
 						Quindi, l'architettura è una ricetta alla quale attenersi scrupolosamente?
-						<br />
-						Ma non è forse vero che...
 						<br /><br />
 						<div class="quotation">
-							&quot;<em>la qualità di una torta la si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole</em>&quot;.
+							La qualità di una torta si valuta assaggiandola.
+							<br /><br />
+							L'aderenza alla ricetta è una metrica molto debole.
 						</div>
 					</td>
 				</tr>
@@ -158,7 +165,7 @@
 					<td>
 						La similitudine tra l'architettura civile e quella del software è molto ricorrente.
 						<br />
-						Sfortunatamente, è una metafora che regge fino ad un certo punto.
+						Sfortunatamente, è anche una metafora che regge fino ad un certo punto.
 						<br /><br />
 						Questo è il primissimo server di produzione Google&trade;. Faceva girare l'intera piattaforma, fino a pochi anni fa.
 						<br />
@@ -167,18 +174,21 @@
 						Queste immagini dovrebbero rendere l'idea di quanto sia cambiata Google&trade;, dalla sua nascita
 						ad oggi.
 						<br /><br />
-						Se, al contrario, guardiamo, non so, l'Empire State Building, non vediamo cambiamenti architetturali così imponenti.
+						Se, al contrario, guardiamo, non so, l'Empire State Building, o una città, o un'autostrada, non vediamo
+						cambiamenti architetturali altrettanto imponenti.
 						<br /><br />
 						Forse è proprio questa la differenza maggiore tra l'architettura tradizionale e quella software: 
 						l'architettura software deve essere pensata per evolvere nel futuro. Spesso, nell'immediato futuro! 
 						<br /><br />
-						E, mi spiace: garantire l'<em>integrità concettuale</em> non offre alcuna tutela in questo senso!</td>
+						E, mi spiace, ma garantire l'<em>integrità concettuale</em> non mi aiuta in questo senso!</td>
 				</tr>
 				<tr class="odd">
 					<td>9</td>
 					<td>
 					Cosa significa questo? Che l'evoluzione di Google&trade; è frutto di design emergente, a colpi di TDD?
 					<br />
+					Che le tecniche Agile bastino a creare un'architettura sostenibile e scalabile, e che non ci sia bisogno di altro?
+					<br /><br />
 					Voglio raccontarvi una storia.
 					<br />
 					<p>
@@ -201,13 +211,13 @@
 						<br />
 						Moltiplica la situazione di Michele per un migliaio di volte.
 						<br /><br />
-						Io chiamo il risultato &quot;Architettura a matassa&quot;.
+						Il risultato è una &quot;Architettura a matassa&quot;.
 						<br />
-						Vedila come un'enorme blob, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
+						È un'enorme blob, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
 						è in grado di districarla, e nessuno ne ha il controllo.
 						<br /><br />
-						Ora, mettiamo di aver bisogno di sostituire una delle applicazioni chiave, perché la sua tecnologia
-						è datata o perché il fornitore smetterà di fornire supporto. 
+						Ora, mettiamo di aver bisogno di sostituire una delle applicazioni chiave, per esempio perché la sua tecnologia
+						è datata oppure perché il fornitore smetterà di fornire supporto. 
 						<br/>
 						Ci sarà difficile, se non impossibile, capire quali siano le connessioni con quell'applicazione.
 						<br /><br />
@@ -225,12 +235,11 @@
 						un sistema operativo come Android, non parta da una strategia aziendale, nella testa dell'amministratore delegato
 						e non la trasformi in una road map tecnologica.
 						<br />
-						<br />Il controllo di un ristretto gruppo di persone
-						è molto più sensato di una totale mancanza di coordinamento.
+						<br />Il controllo di un ristretto gruppo di persone è molto più sensato di una totale mancanza di coordinamento.
 						<br /><br />
 						Cioè, non si può puoi pensare che tutto si riduca a far emergere l'architettura con cicli di red/green/refactor.
 						<br /><br />
-						È questo quel che sostiene Agile?
+						È questo, quello che sostiene Agile?
 						<td></td>
 				</tr>
 				<tr class="even">
@@ -239,7 +248,13 @@
 					<td>
 						No, naturalmente; ma questo non necessariamente significa che tutto sia da attribuirsi alla centralizzazione del pensiero.
 						<br />
-						Parliamo di centralizzazione? Soprattutto nell'ultimo decennio, le critiche verso una gestione centralizzata e formale dell'architettura non sono certo mancate. Enterprise Architecture è effettivamente un'iniziativa che sta coinvolgendo sempre di più le istituzioni finanziarie. Eppure c'è chi sostiene che
+						Il modello centralizzato non è mica il solo esistente! Esistono anche modelli che fanno leva sull'intelligenza distribuita!
+						<br />
+						Vogliamo parlare di centralizzazione?
+						<br /><br />
+						Negli ultimi 10 anni, le critiche verso la gestione centralizzata e formale dell'architettura non sono certo mancate.
+						<br />
+						Enterprise Architecture è effettivamente un'iniziativa che sta coinvolgendo sempre di più la maggioranza delle istituzioni finanziarie. Eppure c'è chi sostiene, cito:
 						<br /><br />
 						<div class="quotation">
 							<p>
@@ -247,17 +262,19 @@
 							</p>
 						</div>
 						<br /><br />
-						L'architettura ha molto più a che fare con la <em>conoscenza condivisa</em> e con la <em>visione comune</em> ed ha una connotazione più &quot;sociale&quot; che tecnica.
+						Perché questo? Perché l'architettura ha molto più a che fare con la <em>conoscenza condivisa</em> e con la <em>visione comune</em>.
+						<br /><br />
+						L'architettura ha una connotazione più sociale che tecnica.
 						<br />
 				</tr>
 				<tr class="odd">
 					<td></td>
 					<td>
 						<p>
-							Ok, scommetto che l'autore di questa frase sia proprio uno di quei guru
+							Ok, scommetto che l'autore di questa citazione sia uno di quei guru
 							&quot;agile&quot;; uno di quelli che occupano i palcoscenici delle
 							conferenze raccontando che i manager sono inutili, che il mondo
-							è degli sviluppatori e che tutti dovremmo iniziare ad
+							appartiene agli sviluppatori e che tutti dovremmo iniziare ad
 							abbracciare gli alberi.
 							<br />
 							Mi sto sbagliando?</p></td>
@@ -268,6 +285,8 @@
 					<td></td>
 						<td>
 							<p>
+								Sì, ti stai sbagliando.
+								<br />
 								L'autore è <em>Ivar Jacobson</em>, uno degli autori di UML e di RUP, cioè
 								di due strumenti tipicamente molto osteggiati da &quot;Agile&quot;.
 							<p>
