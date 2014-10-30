@@ -333,13 +333,10 @@
 				<tr class="even">
 					<td></td>
 					<td>
-						Credo che ci possa essere una &quot;Race Condition&quot;.
-						Naturalmente, a patto che il database non supporti transazioni ACID.
+						Se il database dietro questo servizio non supporta le transazioni ACID,
+						nel caso di due accessi concorrenti, si può manifestare una &quot;Race Condition&quot;.
 						<br />
-						<br />
-						Il problema emerge nel momento in cui il servizio bancario permette l'accesso concorrente.
-						<br />
-						Provo a descrivere il problema.
+						Provo a simulare il caso.
 						<br /><br />
 						Supponiamo che sul conto vi sia attualmente un bilancio di 1.000 EURO.
 						<br />
