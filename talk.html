@@ -51,7 +51,7 @@
 					<td></td>
 					<td>
 						Parlaremo di architettura, confrontando due posizioni molto distanti.
-						<br /><br />
+						<br />
 						Dunque, le metodologie &quot;Agile&quot; rappresentano la risposta ad una visione industriale e taylorista di concepire il processo di sviluppo del software.
 						Chiaramente, l'argomento è molto vasto e dibattuto, ma noi ci focalizzeremo esclusivamente sul tema dell'architettura, contrapponendo la visione &quot;Agile&quot; con quella, per così dire, più classica.
 						<br /><br />
@@ -60,16 +60,12 @@
 					<tr class="even">
 					<td>3</td>
 					<td>
-						Ed è la pura verità. Fowler ha centrato il punto.
-						<br />
 						Cos'è l'archittetura, chiedi?
 						Beh, prova a rivolgere la domanda a tre differenti architetti e otterrai quattro risposte differenti!
 						<br />
-						Senti, faccio un tentativo:
+						Questa è la definizione di IEEE, un'autorità nel panorama informatico.
 						<p class="quotation">
 						  &quot;<em>L'architettura è il più alto livello concettuale di un sistema nel proprio ambiente.</em>&quot;</p>
-						Questa è la definizione di IEEE, un'autorità nel panorama informatico.
-						<br />
 						Credi che tale possa collimare con l'approccio &quot;Agile&quot;?</td>
 					<td></td>
 				</tr>
@@ -150,7 +146,7 @@
 						Queste immagini dovrebbero rendere l'idea di quanto sia cambiata Google&trade;, dalla sua nascita
 						ad oggi.
 						<br />
-						Se, al contrario, guardiamo, non so, l'Empire State Building, non si denotano cambiamenti architetturali così imponenti.
+						Se, al contrario, guardiamo, non so, l'Empire State Building, o una città, o un'autostrada, non si denotano cambiamenti architetturali così imponenti.
 						<br />
 						Forse è proprio questa la grande differenza tra l'architettura tradizionale e quella software: 
 						l'architettura software deve essere pensata per evolvere nel futuro. Spesso, nell'immediato futuro! 
@@ -160,35 +156,37 @@
 				<tr class="odd">
 					<td>9</td>
 					<td>
-					Cosa significa? Che l'evoluzione di Google&trade; è frutto di design emergente, a colpi di TDD?
-					<br />
-					E allora, senti questa storia:
-					<p>
-						Michele lavora in un'azienda enterprise, e nel suo lavoro ha sempre bisogno di dati molto specifici. 
-						Sfortunatamente, questi dati sono distribuiti su diverse applicazioni. 
+						Cosa significa questo? Che l'evoluzione di Google&trade; è frutto di design emergente, a colpi di TDD?
 						<br />
-						Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
-						informazioni da 3 applicazioni, A, B e C e le fornisce a Michele in un file spreadsheet, così che lui
-						sia in grado di leggere il report e svolgere il proprio lavoro.
+						Che le tecniche &quot;Agile&quot; sono sufficienti a creare un'architettura sostenibile e scalabile, e che non vi sia bisogno di altro?
 						<br />
-						Michele, però, si accorge di aver bisogno di quei dati ogni giorno. Così chiede che
-						il programma di raccolta venga eseguito, automaticamente, tutte le mattine.
+						E allora, senti questa storia:
+						<p>
+							Michele lavora in un'azienda enterprise, e nel suo lavoro ha sempre bisogno di dati molto specifici. 
+							Sfortunatamente, questi dati sono distribuiti su diverse applicazioni. 
+							<br />
+							Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
+							informazioni da 3 applicazioni, A, B e C e le fornisce a Michele in un file spreadsheet, così che lui
+							sia in grado di leggere il report e svolgere il proprio lavoro.
+							<br />
+							Michele, però, si accorge di aver bisogno di quei dati ogni giorno. Così chiede che
+							il programma di raccolta venga eseguito, automaticamente, tutte le mattine.
+							<br />
+							Nessun problema: un sistemista crea un'attività schedulata per Michele. 
+							<br />
+							Ecco, il risultato è che, apposta per Michele, è stato creato un vero &quot;Application Workflow&quot;, dipendente da un'attività schedulata e tre applicazioni. 
+							<br />
+							Il fatto, Nicola, è che Michele non è il solo in azienda a voler aumentare la propria produttività.
+							<br />
+							Moltiplica la situazione di Michele per un migliaio di volte.</p>
 						<br />
-						Nessun problema: un sistemista crea un'attività schedulata per Michele. 
+						Il risultato è una &quot;Architettura a matassa&quot;.
 						<br />
-						Ecco, il risultato è che, apposta per Michele, è stato creato un vero &quot;Application Workflow&quot;, dipendente da un'attività schedulata e tre applicazioni. 
-						<br />
-						Il fatto, Nicola, è che Michele non è il solo in azienda a voler aumentare la propria produttività.
-						<br />
-						Moltiplica la situazione di Michele per un migliaio di volte.
-						<br />
-						Io chiamo il risultato &quot;Architettura a matassa&quot;.
-						<br />
-						Vedila come un'enorme blob, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
+						Un'enorme blob, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
 						è in grado di districarla, e nessuno ne ha il controllo.
 						<br />
 						Ora, mettiamo di aver bisogno di sostituire una delle applicazioni chiave, perché la sua tecnologia
-						è datata o perché il fornitore smetterà di fornire supporto. 
+						è datata o perché il fornitore non è in grado di supportarci ulteriormente.
 						<br/>
 						Ci sarà difficile, se non impossibile, capire quali siano le connessioni con quell'applicazione.
 						<br />
@@ -205,6 +203,12 @@
 						Il controllo di un ristretto gruppo di persone è molto più sensato di una totale mancanza di coordinamento.
 						<br />
 						E, credimi, tale architettura non emerge a colpi di red/green/refactor.
+						<br />
+						Il controllo di un ristretto gruppo di persone è molto più sensato di una totale mancanza di coordinamento.
+						<br /><br />
+						Cioè, non si può puoi pensare che tutto si riduca a far emergere l'architettura con cicli di red/green/refactor.
+						<br /><br />
+						È questo, quello che sostiene Agile?
 						<td></td>
 				</tr>
 				<tr class="even">
@@ -218,7 +222,7 @@
 						E, sì, vorrei proprio parlare di &quot;centralizzazione&quot;?
 						Poiché, Arialdo, soprattutto nell'ultimo decennio, le critiche verso una gestione centralizzata e formale dell'architettura non sono certo mancate. Enterprise Architecture è effettivamente un'iniziativa che sta coinvolgendo sempre di più le istituzioni finanziarie. Eppure c'è chi sostiene che
 						<p class="quotation">
-							  &quot;<em>la maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot;
+							  &quot;<em>la maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot.;
 						</p>
 						L'architettura ha molto più a che fare con la <em>conoscenza condivisa</em> e con la <em>visione comune</em> ed ha una connotazione più &quot;sociale&quot; che tecnica.</td>
 				</tr>
@@ -231,7 +235,7 @@
 						è degli sviluppatori e che tutti dovremmo iniziare ad
 						abbracciare gli alberi.
 						<br />
-						Mi sto sbagliando?</td>
+						Mi sto sbagliando?</td></td>
 					<td></td>
 				</tr>
 				<tr>
@@ -240,6 +244,10 @@
 						<td>
 							Guarda, stenterai a crederlo, ma l'autore è, in realtà, <em>Ivar Jacobson</em>, uno degli autori di UML e di RUP, due strumenti tipicamente molto osteggiati da &quot;Agile&quot;.
 							<p>
+								Sì, ti stai sbagliando.
+								<br />
+								L'autore è <em>Ivar Jacobson</em>, uno degli autori di UML e di RUP, cioè
+								di due strumenti tipicamente molto osteggiati da &quot;Agile&quot;.<p>
 						</td>
 				</tr>
 				<tr class="odd">
