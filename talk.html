@@ -301,7 +301,7 @@
 				<tr class="even">
 					<td></td>
 					<td>
-						Se la persistenza è delegata ad un engine che non supporta transazioni ACID,
+						Se non c'è una gestione delle transazioni,
 						in caso di accessi concorrenti si può manifestare una &quot;Race Condition&quot;.
 						<br />
 						Provo a simulare il caso.
@@ -327,7 +327,7 @@
 					<td>
 						Esatto!
 						<br />
-						In quel caso, la Race Condition si manifestava poiché l'engine era MongoDB, che non supporta nativamente transazioni ACID.
+						In quel caso, la Race Condition si manifestava poiché l'engine era MongoDB, che non supporta nativamente le transazioni.
 						<br /><br />
 						Ecco: quel codice apparteneva a Flexcoin, una &quot;Bitcoin bank&quot;.
 						<br />
