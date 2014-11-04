@@ -1,32 +1,29 @@
 FEEDBACK NICOLA:
- -> E' saltata la parte sulla differenza tra architettura tradizionale
-    e architettura del software. Ovvero, l'architettura tradizionale puo contare
-    su anni secoli di conoscenza. L'architettura del software, su poche decadi.
- -> Agile da rimuovere dal diagramma di Freyus.
+ -> È saltata la parte sulla differenza tra architettura tradizionale
+    e architettura del software. Ovvero, l'architettura tradizionale puo contare su anni secoli di conoscenza. L'architettura del software, su poche decadi.
+ OK Agile da rimuovere dal diagramma di Freyus.
  -> (impressione) L'architetto Reloadus è in vantaggio.
  -> Il termine "industria" andrebbe sostituito con "settore" (andrebbe proprio
     fatto notare che Fowler utilizza impropriamente il termine "industria").
- -> Nei primi due "Influence Diagram" mancano le "frecce di ingresso".
+ OK Nei primi due "Influence Diagram" mancano le "frecce di ingresso".
 
 FEEDBACK LUIGI:
  -> Non piace il rosa.
- -> Nicola da la percezione di "ripetere la lezioncina". Serve essere più naturali...
+ -> Nicola dà la percezione di "ripetere la lezioncina". Serve essere più naturali...
 OK -> Pronunciare per intero IEEE.
  -> Mai leggere le slide. Parafrasare, ma non leggere "parola per parola".
  -> Rallentare un po' il ritmo (in alcuni frangenti, si andava troppo spediti).
- -> Evitiamo RUP a pronunciamo UML (all'italiana...).
+OK -> Evitiamo RUP a pronunciamo UML (all'italiana...).
 OK -> Slide sul "piano regolatore" -> si leggono le slide... meglio un'immagine forte di una città "scaciata".
 OK -> Proposta immagine di Nicola (piano regolatore -> https://twitter.com/CyrilleDeruel/status/473907623746863104)
-    Luigi metterebbe i "cerchietti rossi" per evidenziare il problema.
+OK    Luigi metterebbe i "cerchietti rossi" per evidenziare il problema.
  -> Nella parte di "Michele", forse Nicola si potrebbe "intromettere" ad un certo punto, giusto per spezzare.
- -> Vocabolario di Nicola troppo ampio... e due! :-(
- -> Secondo Luigi, le "scrittine" nel grafico del Dreyfus Model ci potrebbero anche stare...
- -> Chiarire la parte sull'esempio di codice. La parte sulle transazioni non è chiara.
- -> Il discorso sulla "troppa astrazione" (clear-thinking framework) va articolate un pochettino meglio.
-    Forse, trovare un termine alternativo a "clear-thinking".
- -> Non si capisce da dove arrivino i termini "Reloadus" e "Ozyrus".
- -> Nicola, andava un po' troppo veloce sulla parte "Reloadus" vs "Ozyrus".
- -> L'architetto "enterprise" non deve abbracciare waterfall. Lui non respinge "Agile". Semplicemente,
-    per lui non è sufficiente. Va chiarito meglio.
- -> Ripristinare "Last Responsible Moment"!
- -> "Coding" invece di "programmazione" ("programmazione" è troppo poco raffinata).
+OK -> Vocabolario di Nicola troppo ampio... e due! :-(
+OK -> Secondo Luigi, le "scrittine" nel grafico del Dreyfus Model ci potrebbero anche stare...
+OK -> Chiarire la parte sull'esempio di codice. La parte sulle transazioni non è chiara.
+OK -> Il discorso sulla "troppa astrazione" (clear-thinking framework) va articolate un pochettino meglio. Forse, trovare un termine alternativo a "clear-thinking".
+OK -> Non si capisce da dove arrivino i termini "Reloadus" e "Ozyrus".
+OK -> Nicola, andava un po' troppo veloce sulla parte "Reloadus" vs "Ozyrus".
+ -> L'architetto "enterprise" non deve abbracciare waterfall. Lui non respinge "Agile". Semplicemente, per lui non è sufficiente. Va chiarito meglio.
+OK -> Ripristinare "Last Responsible Moment"!
+OK -> "Coding" invece di "programmazione" ("programmazione" è troppo poco raffinata).
