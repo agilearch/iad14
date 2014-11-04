@@ -11,11 +11,11 @@ FEEDBACK NICOLA:
 FEEDBACK LUIGI:
  -> Non piace il rosa.
  -> Nicola da la percezione di "ripetere la lezioncina". Serve essere più naturali...
- -> Pronunciare per intero IEEE.
+OK -> Pronunciare per intero IEEE.
  -> Mai leggere le slide. Parafrasare, ma non leggere "parola per parola".
  -> Rallentare un po' il ritmo (in alcuni frangenti, si andava troppo spediti).
  -> Evitiamo RUP a pronunciamo UML (all'italiana...).
- -> Slide sul "piano regolatore" -> si leggono le slide... meglio un'immagine forte di una città "scaciata".
+OK -> Slide sul "piano regolatore" -> si leggono le slide... meglio un'immagine forte di una città "scaciata".
  -> Proposta immagine di Nicola (piano regolatore -> https://twitter.com/CyrilleDeruel/status/473907623746863104)
     Luigi metterebbe i "cerchietti rossi" per evidenziare il problema.
  -> Nella parte di "Michele", forse Nicola si potrebbe "intromettere" ad un certo punto, giusto per spezzare.
