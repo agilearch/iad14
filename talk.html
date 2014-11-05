@@ -53,21 +53,20 @@
 						Parlaremo di architettura, confrontando due posizioni molto distanti.
 						<br />
 						Dunque, le metodologie &quot;Agile&quot; sono la risposta ad una visione industriale e taylorista del processo di sviluppo del software.
-						Chiaramente, l'argomento è molto vasto e dibattuto, ma noi in questa presentazione ci limiteremo a parlare di architettura
-						cercando di far scontrare la visione &quot;Agile&quot; con quella, per così dire, più classica.
+						Chiaramente, l'argomento è molto vasto e dibattuto, ma nel corso della sessione cercheremo ti tenere il focus sul tema dell'architettura, facendo scontrare la visione &quot;Agile&quot; con quella, per così dire, più classica.
 						<br /><br />
-						Bene, Fowler sostiene che <em>'architetto' ed 'architettura' sono parole terribilmente sovraccaricate di significati</em>&quot;.</td>
+						Bene, Fowler sostiene che <em>'architetto' ed 'architettura' siano parole terribilmente sovraccaricate di significati</em>&quot;.</td>
 				</tr>
 					<tr class="even">
 					<td>3</td>
 					<td>
-						Cos'è l'archittetura?
+						Eh, cos'è l'archittetura...
 						Provate a chiederlo a tre differenti architetti e otterrete quattro risposte differenti!
 						<br />
-						Questa è una definizione abbastanza ufficiale e riconosciuta in letteratura:
+						Questa definizione è, in qualche modo, quanto di più formale si possa trovare in letteratura:
 						<p class="quotation">
-						  &quot;<em>L'architettura è il più alto livello concettuale di un sistema nel proprio ambiente.</em>&quot;</p>
-						È una definizione che può piacere ad un architetto agile?</td>
+						  &quot;<em>L'architettura è il più alto livello concettuale di un sistema nel proprio ambiente.</em>&quot;.</p>
+						Può piacere ad un architetto agile?</td>
 					<td></td>
 				</tr>
 				<tr class="odd">
@@ -76,16 +75,17 @@
 					<td>
 						Assolutamente no.
 						<br />
-						Che significa "il più alto livello concettuale"? Che l'architetto occupa un livello superiore
-						rispetto allo sviluppatore?
+						Cosa significa il &quot;più alto livello concettuale&quot;?
 						<br />
-						Che l'architettura è una sorta di &quot;stadio finale&quot; nel processo evolutivo del programmetore.</td>
+						Il più alto livello concettuale, per quanto mi riguarda, è quello degli <strong>utenti</strong> che utilizzano le nostre applicazioni.
+						<br />
+						Ma, forse, volevi riferirti al &quot;più alto livello concettuale&quot; che gli <strong>sviluppatori</strong> hanno del sistema e delle sue componenti.
+						<br />
+						Perché, in caso contrario, rischi di far apparire l'architettura come una sorta di &quot;stadio finale&quot; nel processo evolutivo del programmatore.</td>
 				</tr>
 				<tr class="even">
 					<td>5</td>
 					<td>
-						Sì, in qualche modo sì.
-						<br />
 						La mia tesi è che, almeno quando si ha a che fare con progetti complessi, un elevato livello di astrazione sia davvero necessario.
 						<br />
 						E mi stupisco che in &quot;Agile&quot; non sia così, perché non si tratta banalmente di mettere gli &quot;sviluppatori contro gli architetti&quot;, ma di conseguire una <em>integrità concettuale</em>.
@@ -96,7 +96,7 @@
 						Ma perché penso che un pensiero centrale sia necessario?
 						Perché è molto probabile che i singoli membri del team non abbiano sufficienti competenze per 
 						assumere determinate decisioni. Parlo di quelle più cruciali, quelle che devono essere prese con larghissimo anticipo.
-						Per cui l'architetto, che ha questa maturità, è in grado di produrre un piano strategico al quale attenersi.</td>
+						Per cui l'architetto, che ha conseguito questa maturità, è in grado di produrre un piano strategico al quale attenersi.</td>
 					<td></td>
 				</tr>
 				<tr class="odd">
@@ -107,7 +107,7 @@
 						<br />
 						Quindi, l'architettura è una ricetta alla quale attenersi scrupolosamente?
 						<br />
-						La qualità di una torta si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole.</p>
+						La qualità di una torta la si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole.</p>
 					</td>
 				</tr>
 					<tr class="even">
@@ -115,18 +115,18 @@
 						<td>
 							Ci mancherebbe!
 							<br />
-							Eppure, una ricetta è necessaria! Le torte non si realizzano mescolando gli ingredienti a caso.
-							<br /><br />
+							Eppure, una ricetta è necessaria! Le torte non si realizzano mescolando ingredienti a caso.
+							<br />
 							Costruire un sistema enterprise di grandi dimensioni e complessità senza un <strong>Enterprise Architect</strong> è come tentare di costruire una città senza un piano regolatore.
-							<br /><br />
+							<br />
 							È possibile costruire una città senza un piano?
 							<br />
 							Probabilmente.
-							<br /><br />
+							<br />
 							Andreste a vivere in quella città?
 							<br />
 							Probabilmente no.
-							<br /><br />
+							<br />
 							Ovviamente, un architetto che disegni un piano regolatore non garantisce una città vivibile: semplicemente, ne aumenta le probabilità.
 						</td>
 						<td></td>
@@ -137,9 +137,10 @@
 					<td>
 						La similitudine tra l'architettura civile e quella del software è molto ricorrente.
 						<br />
-						Sfortunatamente, è una metafora che regge fino ad un certo punto.
+						Sfortunatamente, si tratta di un'analogia che che regge fino ad un certo punto.
 						<br />
-						Questo è il primissimo server di produzione Google&trade;. Faceva girare l'intera piattaforma, fino a pochi anni fa.
+						Guarda.
+						Questo è il primissimo server di produzione Google&trade;. All'inizio, ospitava l'intera piattaforma.
 						<br />
 						Quella sotto, invece, è una foto scattata nemmeno 10 anni dopo, ed è una piccola frazione della server farm che esiste oggi.
 						<br />
@@ -158,8 +159,7 @@
 					<td>
 						Cosa significa questo? Che l'evoluzione di Google&trade; è frutto di design emergente, a colpi di TDD?
 						<br />
-						Che basta applicare le tecniche &quot;Agile&quot; per creare un'architettura sostenibile e scalabile,
-						e che non ci sia bisogno di un intervento su altri livelli?
+						Che è sufficiente applicare una metodologia &quot;Agile&quot; per definire una soluzione che garantisca, ad esempio, affidabilità e scalabilità?
 						<br />
 						E allora, senti questa storia:
 						<p>
@@ -167,44 +167,43 @@
 							Sfortunatamente, questi dati sono distribuiti su diverse applicazioni. 
 							<br />
 							Esclusivamente per Michele, uno sviluppatore crea un programma che recupera le
-							informazioni da 3 applicazioni, A, B e C e le fornisce a Michele in un file spreadsheet, così che lui
+							informazioni da tre applicazioni, A, B e C e le fornisce a Michele in un file spreadsheet, così che lui
 							sia in grado di leggere il report e svolgere il proprio lavoro.
 							<br />
 							Michele, però, si accorge di aver bisogno di quei dati ogni giorno. Così chiede che
 							il programma di raccolta venga eseguito, automaticamente, tutte le mattine.
 							<br />
-							Nessun problema: un sistemista crea un'attività schedulata per Michele. 
+							Nessun problema: un sistemista aggiunge un'attività schedulata per Michele. 
 							<br />
-							Ecco, il risultato è che, apposta per Michele, è stato creato un vero &quot;Application Workflow&quot;, dipendente da un'attività schedulata e tre applicazioni. 
+							Ecco, il risultato è che, apposta per Michele, è stato creato un vero &quot;Application Workflow&quot;, dipendente da un'attività schedulata e tre applicazioni.
 							<br />
 							Il fatto è che Michele non è il solo in azienda a voler aumentare la propria produttività.
 							<br />
 							Moltiplica la situazione di Michele per un migliaio di volte.</p>
-						<br />
 						Il risultato è una &quot;Architettura a matassa&quot;.
 						<br />
 						Un'enorme blob, con fibre di connessione che vanno in ogni possibile direzione. Nessuno
-						è in grado di districarla, e nessuno ne ha il controllo.
+						è in grado di districarla, e nessuno ne ha controllo.
 						<br />
-						Ora, mettiamo di aver bisogno di sostituire una delle applicazioni chiave, perché la sua tecnologia
+						Ora, supponiamo di aver bisogno di sostituire una delle applicazioni chiave, perché la sua tecnologia
 						è datata o perché il fornitore non è in grado di supportarci ulteriormente.
 						<br/>
 						Ci sarà difficile, se non impossibile, capire quali siano le connessioni con quell'applicazione.
 						<br />
-						Hai una rete infinita di dipendenze e, ironicamente, siamo noi stessi ad averla creata, anno dopo anno.
+						Hai una rete infinita di dipendenze e, ironicamente, siamo noi stessi ad averla prodotta, anno dopo anno.
 						<br />
 						Ognuna delle connessioni era perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente
 						contorto che risulta impossibile apportare modifiche in un punto senza provocare danni in un altro.
 						<br />
-						Ecco, è qui che opera <em>Enterprise Architecture</em>: aiuta a creare un ecosistema IT organizzato in modo che ognuno disponga della libertà di apportare miglioramenti, in modo da garantire margini per l'innovazione. L'architettura fa in modo che l'ecosistema resti comunque robusto e flessibile.
+						Ecco, è qui che opera <em>Enterprise Architecture</em>: aiuta a definire un ecosistema IT organizzato in modo che ognuno disponga della libertà di apportare miglioramenti, in modo da garantire margini per l'innovazione. L'architettura fa in modo che l'ecosistema resti comunque robusto e flessibile.
 						Proprio per questo motivo è richiesta l'esistenza di un processo che mantenga tutto ordinato.</p>
 						Ecco: non puoi pensare che un'azienda come Google&trade;, quando decide di aggredire il mercato mobile e inizia a sviluppare 
 						un sistema operativo come Android, non parta da una strategia aziendale, pensata come piano di business dall'amministratore
-						delegato e, poi non la trasformi in una road map tecnologica.
+						delegato e, poi, non la trasformi in una road map tecnologica.
 						<br />
 						Il controllo di un ristretto gruppo di persone è molto più sensato di una totale mancanza di coordinamento.
 						<br /><br />
-						Cioè, non si può puoi pensare che tutto si riduca a far emergere l'architettura con cicli di red/green/refactor.
+						Dai, non puoi credere che tutto si riduca a far emergere l'architettura con cicli di red/green/refactor.
 						<br /><br />
 						O è questo, quello che sostiene Agile?
 						<td></td>
@@ -215,20 +214,18 @@
 					<td>
 						No, non è questo.
 						<br />
-						Ma può darsi che anche la &quot;centralizzazione del pensiero&quot; non sia sufficiente a risolvere il problema,
-						perché introduce più problemi di quelli che cerca di risolvere.
+						Ma, può darsi, che anche la &quot;centralizzazione del pensiero&quot; non sia sufficiente a risolvere il problema, poiché introduce più problemi di quelli che cerca di risolvere.
 						<br />
-						È vero che Enterprise Architecture sta coinvolgendo sempre di più le istituzioni finanziarie nel mondo.
-						Eppure c'è chi sostiene questo:
+						È vero, &quot;Enterprise Architecture&quot; sta coinvolgendo sempre di più le istituzioni finanziarie nel mondo.
+						Eppure c'è chi sostiene quanto segue:
 						<p class="quotation">
-							  &quot;<em>la maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot.;
-						</p>
+							  &quot;<em>La maggioranza delle iniziative Enterprise Architecture ha fallito. Io stimo che in più del 90% dei casi non sia stato realizzato niente di utile</em>&quot;.</p>
 						L'architettura ha molto più a che fare con la <em>conoscenza condivisa</em> e con la <em>visione comune</em> ed ha una connotazione più &quot;sociale&quot; che tecnica.</td>
 				</tr>
 				<tr class="odd">
 					<td></td>
 					<td>
-						Ok, sono pronto a scommetterci: hai usato una citazione di uno di quei guru
+						Ok, sono pronto a scommetterci: hai fatto ricorso alla citazione di uno di quei guru
 						&quot;Agile&quot; che occupano i palcoscenici delle
 						conferenze raccontando che i manager sono inutili, che il mondo
 						è degli sviluppatori e che tutti dovremmo iniziare ad
@@ -241,8 +238,7 @@
 					<td>11</td>
 					<td></td>
 						<td>
-						  Guarda, stenterai a crederlo, ma l'autore è, in realtà, <em>Ivar Jacobson</em>, uno degli autori di UML,
-						  cioè lo strumento tanto osteggiato da &quot;Agile&quot;.
+						  Guarda, stenterai a crederlo, ma l'autore è, in realtà, <em>Ivar Jacobson</em>, uno dei maggiori &quot;contributor&quot; di UML, uno strumento piuttosto osteggiato da &quot;Agile&quot;.
 				</tr>
 				<tr class="odd">
 					<td>12</td>
@@ -257,15 +253,15 @@
 						<br />
 						Detto questo, però, io ho l'impressione che queste idee siano un po' naive: fanno sognare, fanno riferimento a principi molto democratici e accattivanti.
 						<br />
-						Ma io non scelgo una metodologia in base a quanto è bella, ma in base a quanto funziona.
+						Ma io non vado ad adottare una metodologia sulla base di quanto possa risultare efficace &quot;socialmente&quot;.
 						<br />
-						Sicché, anche se rischio di apparire un po' cravattone, preferisco basare le mie scelte su proposizioni scientifiche.
+						Anche se rischio di apparire un po' cravattone, preferisco basare le mie scelte su proposizioni scientifiche.
 						<br />
 						Al che mi domando: qual è il fondamento scientifico di quello che &quot;Agile&quot; sostiene?
 						<br />
-						Vi dico perché c'è la necessità di un livello di astrazione.
+						Vi dico perché avverto la necessità per un &quot;livello di astrazione&quot;.
 						<br />
-						Conoscete il Modello <em>Dreyfus</em> di &quot;Acquisizione Delle Competenze&quot;?
+						Conoscete il modello <em>Dreyfus</em> di &quot;acquisizione delle competenze&quot;?
 						<br />
 						È stato ideato negli anni 80 da due docenti californiani. Non è una teoria campata per aria: anzi, ha avuto un grande impatto in campo infermieristico e aziendale.
 						<br />
@@ -275,17 +271,17 @@
 						<br />
 						Poi, gradualmente, acquisiamo autonomia e finiamo perfino per abbandonare le regole e affidarci all'intuito.
 						<br />
-						Guardate: alla base della piramide c'è il <em>novizio</em>. Aderisce alle regole: gli si dice cosa fare, e lui si limita ad eseguire, senza troppe domande.
+						Guardate: alla base della piramide c'è il <em>novizio</em>. Aderisce alle regole: gli si dice cosa fare, e lui si limita ad eseguire, senza porsi troppe domande.
 						<br />
-						Sopra abbiamo il <em>principiante</em>: segue le regole, come il novizio, ma inizia a collegarle alle situazioni in cui vanno applicate, inizia a porsi delle domande. È il caso del programmatore junior, che può affrontare da solo lo sviluppo di un componente se dispone di specifiche chiare, ma non è in grado di progettarlo da zero in autonomia.
+						Subito sopra troviamo il <em>principiante</em>: segue le regole, come il novizio, ma inizia a contestualizzarle nelle varie situazioni e a porsi quesiti. È il caso del programmatore junior, che può affrontare autonomamente lo sviluppo di un componente qualora disponga di specifiche chiare, anche se, chiaramente, non è in grado di progettarlo da zero in autonomia.
 						<br />
-						Poi ci sono i <em>competenti</em>: persone capaci di gestire la complessità, di scindere vari fattori - anche quando interagiscono tra loro. Persone capaci di comprendere le conseguenze a lungo termine delle proprie azioni, pur senza coglierne tutte le implicazioni.
+						Poi ci sono i <em>competenti</em>: persone capaci di gestire la complessità, di scindere i vari fattori. Persone capaci di comprendere le conseguenze a lungo termine delle proprie azioni, pur senza coglierne tutte le implicazioni.
 						<br />
 						Arriviamo, poi, ai <em>proficient</em>: sono tecnici che affrontano il problema con una prospettiva differente, con un approccio olistico e sistemico. Soggetti che, osservando l'albero, sono in grado di visualizzare l'intera foresta.
 						<br />
-						Infine, abbiamo gli <em>esperti</em>, che adottano un approccio largamente intuitivo e ricorrono a mezzi analitici solo all'occorrenza, in situazioni nuove.
+						Infine, abbiamo gli <em>esperti</em>, che adottano un approccio largamente intuitivo e ricorrono a mezzi analitici solo all'occorrenza, prevalentemente in situazioni nuove.
 						<br />
-						Ecco, i compiti di un architetto richiedono questo livello.
+						Ecco, i compiti di un architetto richiedono quest'ultimo livello.
 						<br />
 						L'idea secondo la quale non vi sia effettivo bisogno di ruoli specifici - che in fondo, di fronte alla complessità, <em>siamo tutti uguali</em> - è molto romantica, ma manca di fondamento scientifico e rischia di apparire naive.</td>
 				</tr>
@@ -293,30 +289,31 @@
 					<td>12</td>
 					<td></td>
 					<td>
-						A proposito di &quot;sviluppatori che dovrebbero occuparsi dello sviluppo di un singolo componente&quot;, vorrei raccontarti un aneddoto, che dimostra quanto, invece, l'architettura dovrebbe essere un che riguarda tutti.
+						A proposito di &quot;sviluppatori che dovrebbero occuparsi dello sviluppo di un singolo componente&quot;, vorrei raccontarti un aneddoto, che dimostra quanto, invece, l'architettura dovrebbe essere qualcosa che vada a coinvolgere tutti.
 						<br />
-						Ok, dateci un occhio: si tratta di una classica operazione di &quot;prelievo&quot; fondi.
+						Guardate un po' questo snippet: si tratta di una classica operazione di &quot;prelievo&quot; fondi.
+						Un ATM, insomma...
 						<br />
 						Riuscite ad individuare la falla?</td>
 				</tr>
 				<tr class="even">
 					<td></td>
 					<td>
-						Se non c'è una gestione delle transazioni,
-						in caso di accessi concorrenti si può manifestare una &quot;Race Condition&quot;.
+						Se il database supporta transazioni ACID, definendo il livello di isolamento opportuno, io non vedo problemi, se non in termini di scalabilità.
+						<br />
+						In caso contrario, accessi concorrenti potrebbero originare una &quot;Race Condition&quot;.
 						<br />
 						Provo a simulare il caso.
 						<br />
-						Supponiamo che sul conto ci sia un bilancio di 1.000 EURO.
+						Supponiamo che sul conto vi sia un bilancio di 1.000 EURO.
 						<br />
 						Mi connetto e decido di prelevare 100 EURO.
 						<br />
-						&quot;balance&quot; vale 1.000, &quot;amount&quot; vale 100, quindi, nella variabile
-						&quot;new_balance&quot;, avrò 900 EURO.
+						Quindi, in prima battuta &quot;balance&quot; vale 1.000 e &quot;amount&quot; 100.
+						A quel punto, in &quot;new_balance&quot;, troverò il valore 900.
 						<br />
-						Ora, prima di scrivere il valore di &quot;new_balance&quot; sul database, con una seconda connessione,
-						accedo al medesimo conto, e chiedo ancora una volta di ritirare 100 EURO. 
-						<br /><br />
+						Ora, prima di scrivere il valore di &quot;new_balance&quot; sul database, una seconda connessione accede al medesimo conto, chiedendo, ancora una volta, di ritirare 100 EURO.
+						<br />
 						La prima riga viene nuovamente eseguita e dal database risulta ancora un bilancio pari a 1.000 EURO.
 						<br />
 						Che dire... fantastico! Sono in grado di prelevare 200 euro, facendomene addebitare solo 100!</td>
@@ -326,31 +323,18 @@
 					<td></td>
 					<td></td>
 					<td>
-						Esatto!
+						Esattamente!
 						<br />
-						In quel caso, la Race Condition si manifestava poiché l'engine era MongoDB, che non supporta nativamente le transazioni.
-						<br /><br />
-						Ecco: quel codice apparteneva a Flexcoin, una &quot;Bitcoin bank&quot;.
+						In quel caso, la Race Condition si manifestava poiché l'engine era MongoDB, che non consente in qualche modo di &quot;serializzare&quot; l'accesso ai documenti, benchè supporti pienamente operazioni di incremento atomiche.
 						<br />
-						Un attacker è riuscito a sfruttare la Race Condition e a dilapidare i forzieri della banca,
+						Ora, quel codice apparteneva a &quot;Flexcoin&quot;, una &quot;Bitcoin bank&quot;.
+						<br />
+						Un attacker è riuscito a sfruttare la Race Condition, dilapidando i forzieri della banca,
 						per un totale di circa mezzo milione di dollari.
-						La conclusione della vicenda è stata che, a marzo di quest'anno, Flexcoin ha chiuso i battenti.
+						La conclusione di questa spiacevole vicenda è stata che, a Marzo di quest'anno, &quot;Flexcoin&quot; ha chiuso i battenti.
 						<br />
-						Impressionante, no?
-						<br /><br />
-						Se ci si riflette, tutto questo si traduce in un fallimento quasi &quot;sociale&quot;: è
-						il fallimento dell'insegnamento accademico dei sistemi distribuiti.
-						<br />
-						Abbiamo educato gli sviluppatori a pensare solo ai dettagli,
-						li abbiamo equipaggiati con ambienti &quot;magici&quot; e preconfezionati,
-						che permettono loro di prescindere dagli aspetti 
-						architetturali, nella speranza, come sostieni tu, che possano occuparsi in autonomia
-						dello sviluppo del <em>singolo componente</em>.
-						<br />
-						Peccato che, guardando il singolo componente, a volte trascurino così tanto la visione architetturale
-						da arrivare a compromettere la sopravvivenza dell'azienda stessa.
-						<br /><br />
-						Ottimo risultato!</td>
+						Riflettendoci bene, tutto questo si traduce in un fallimento quasi &quot;sociale&quot;: è
+						il fallimento di un insegnamento accademico dei sistemi distribuiti che ha educato gli sviluppatori all'utilizzo di <em>clear-thinking framework<em>, ovvero di strumenti che permettevano loro di prescindere dagli aspetti architetturali, nella speranza, come sostieni tu, che potessero occuparsi in autonomia dello <em>sviluppo del singolo componente</em>.</td>
 				</tr>
 				<tr class="even">
 					<td></td>
@@ -364,8 +348,8 @@
 					<td>14</td>
 					<td>
 						Sì, il mio architetto è la persona che prende le decisioni importanti, quelle di più alto livello.
-						Ad esempio, è quello che si sarebbe preoccupato di scegliere un database transazionale,
-						proprio per evitare incidenti come quello di Flexcoin.
+						E si sarebbe assicurato che fosse stato utilizzato un database che supportasse transazioni &quot;full-ACID&quot;, proprio per evitare incidenti come quello di &quot;Flexcoin&quot;.
+						<br />
 						Chiamiamolo <em>Accountable Architect</em>.</td>
 					<td></td>
 				</tr>
@@ -373,16 +357,16 @@
 					<td>15</td>
 					<td></td>
 					<td>
-						Allora chiamiamo il mio <em>Pragmatic Architect</em>.
+						Il mio lo definirei <em>Pragmatic Architect</em>.
 						<br />
-						Il mio architetto non così interessato a prendere personalmente decisioni importanti.</td>
+						E, il mio architetto, non così interessato a prendere personalmente decisioni.</td>
 				</tr>
 				<tr class="odd">
 					<td>16</td>
 					<td></td>
 					<td>
-						L'attività più importante del mio architetto è fare da mentore per i team,
-						in modo tale da consentire a ciascuno dei membri di raggiungere un livello di competenze tale da permettergli di affrontare autonomamente problematiche sempre più complesse.
+						L'attività più importante del mio architetto è quella di fare da mentore per i team,
+						in modo tale da consentire a ciascuno dei loro membri di raggiungere un livello di competenze tale da permettergli di affrontare autonomamente problematiche sempre più complesse.
 						<br />
 						Incrementare le abilità dei team consente all'architetto di svincolarsi dall'incombenza di fungere da solo &quot;decision maker&quot; e rimuove il rischio di gravare sull'intero processo come &quot;collo di bottiglia&quot;.</td>
 				</tr>
@@ -390,7 +374,7 @@
 					<td>17</td>
 					<td></td>
 					<td>
-						La metafora che mi sembra più appropriata è quella proposta da Mike Two: l'architetto è come una &quot;guida alpina&quot;; è la persona più skillata, che può insegnare agli altri membri come muoversi ed è sempre un riferimento nei momenti di maggior difficoltà.</td>
+						La metafora che mi sembra più appropriata è quella proposta da Mike Two: l'architetto come una &quot;guida alpina&quot;; è la persona più skillata, che può insegnare agli altri membri come muoversi ed è sempre un riferimento nei momenti di maggior difficoltà.</td>
 				</tr>
 				<tr class="odd">
 					<td>18</td>
@@ -398,7 +382,7 @@
 					<td>
 						In questo senso, credo che il valore di un architetto sia inversamente proporzionale alla quantità di decisioni che è costretto a prendere.
 						<br /><br />
-						E, se ci si pensa, è una figura molto simile al Coach, in Extreme Programming.
+						E, pensandoci bene, è una figura molto simile al Coach in eXtreme Programming.
 						<br /><br />
 						In sostanza, l'architetto realizza il suo compito quando ha reso il team autonomo.
 					</td>
@@ -417,9 +401,9 @@
 					<td>20</td>
 					<td>
 						A me appare tutto piuttosto fumoso e un po' distante dalle reali esigenze delle aziende enterprise, ma ne colgo il senso.
-						<br /><br />
-						Diciamo che il mio architetto sul piano puramente operativo è meno impegnato dell'architetto agile. 
-						Magari è più interessato a creare una visione comune, allineata alle scelte di business.
+						<br />
+						Diciamo che il mio architetto, sul piano puramente operativo, è meno impegnato dell'architetto &quot;Agile&quot;.
+						Magari, è più interessato a creare una visione comune, allineata alle scelte di business.
 						<br />
 						Forse non è presente nelle singole scalate e lascia questo compito a degli alpini professionisti.
 						Ecco, diciamo che il mio architetto è quello che si preoccupa di fornire alla spedizione una cartina dettagliata ed affidabile.
@@ -432,12 +416,10 @@
 					<td>21</td>
 					<td>
 						Perché esistono delle decisioni che vanno prese con largo anticipo, prima che sia troppo tardi; prima di scoprire che le fondamenta sulle quali il progetto si reggeva erano inconsistenti. 
-<br />
-						Qui ho rappresentato le classiche fasi di sviluppo di un progetto, che vanno dal Concept, la raccolta dei requisiti,
-						lo sviluppo e così via.
 						<br />
-						La mia tesi è che con il passare del tempo, il costo da sostenere per apportare una modifica aumenti. Cioè, col passare del
-						tempo aumenti l'irreversibilità del processo
+						Qui ho rappresentato le classiche fasi di sviluppo di un progetto, che vanno dal <em>concept</em>, alla raccolta dei requisiti, allo sviluppo e così via.
+						<br />
+						La mia tesi è che, con il passare del tempo, il costo da sostenere per apportare una modifica aumenti. Cioè, col passare del tempo aumenti l'irreversibilità del processo.
 						<br />
 						Ecco, quello è il compito dell'architetto: aiutare a definire quegli aspetti del design che sono più costosi da cambiare in corso d'opera.</td>
 					<td></td>
@@ -446,31 +428,38 @@
 					<td>22</td>
 					<td></td>
 					<td>
-						Probabilmente è questo il punto cruciale: si possono vedere le metodologie &quot;Agili&quot; come un sistema per contenere la complessità e ridurre l'irreversibilità.
+						Probabilmente è questo il punto cruciale: si possono vedere le metodologie &quot;Agili&quot; come un sistema volto al contenimento della complessità e alla riduzione dell'irreversibilità.
 						<br />
-						Clasicamente, la complessità viene affrontata con la pianificazione: si cerca di minimizzare l'impatto negativo del cambiare idea in corso d'opera.
+						Classicamente, la complessità viene affrontata con la pianificazione: si cerca di minimizzare l'impatto negativo del cambiare idea in corso d'opera.
 						<br />
-						Io penso che cambiamento sia inevitabile, e mi adopero per affrontarlo. &quot;Embrace the change&quot;, è il mio motto. 
+						Una delle poche cose che ho imparato in questi anni è che il cambiamento è inevitabile.
 						<br />
-						Chi pensa di poter pianificare tutto disegna piani come questo:
-						<br /></td>
+						Punto.
+						<br />
+						Anzi, sai una cosa? Ultimamente ho imparato ad abbracciarlo e, addirittura, ad incoraggiarlo!
+						<br />
+						Mi trasmette l'idea che l'azienda per cui lavoro è dinamica. E questo è dannatamente importante!
+						<br />
+						Quindi, io devo adoperarmi per affrontarlo e gestirlo.
+						<br />
+						Chi ritiene di poterlo gestire con la pianificare, produce questo:</td>
 				</tr>
 				<tr class="odd">
 					<td>23</td>
 					<td></td>
 					<td>
-						Purtroppo, per quante energie si investano nel predirre il futuro, la strada che ci si troverà di fronte assomiglierà più a questa:</td>
+						Sfortunatamente, per quante energie si investano nel predirre il futuro, la strada che ci troveremo a percorrere assomiglierà più a questa:</td>
 				</tr>
 				<tr class="even">
 					<td>24</td>
 					<td></td>
 					<td>
-						Per cui, questa è la visione che si può avere del futuro.
-						<br /><br />
-						Io faccio leva sullo &quot;scope&quot;; avanzo per &quot;piccoli passi&quot;.
-						<br /><br />
+						Per questo motivo, il futuro ci apparirà così:
+						<br />
+						Io, invece, faccio leva sullo &quot;scope&quot;; avanzo per &quot;piccoli passi&quot;.
+						<br />
 						Kent Beck usa una metafora molto convincente: quella della &quot;guida&quot;.
-						<br /><br />
+						<br />
 						&quot;<em>Guidare non è una questione di puntare la macchina nella giusta direzione.
 						Guidare riguarda dare attenzione costante, apportando piccole correzioni prima in una direzione, e poi in un'altra.
 						<br />
@@ -495,40 +484,27 @@
 					<td></td>
 					<td>
 						La scommessa di <em>eXtreme Programming</em> è proprio questa: se riuscissimo ad appiattire
-						la curva dei costi fosse piatta, potremmo contare sul fatto 
-						che cambiare il codice sia sempre un'operazione economica, in fase di design come in produzione.
-						Se ipoteticamente la curva dei costi fosse più piatta, ci comporteremmo in modo completamente differente
-						da come abbiamo sempre fatto.
-						<br /><br />
-						Per esempio, invece di pianificare tutto al minimo dettaglio, cercheremmo di rimandare le decisioni,
-						al Last Responsible Moment,
-						semplicemente per avere più tempo a disposizione per indagare sul problema.
+						la curva dei costi, potremmo contare sul fatto che cambiare il codice consista sempre in un'operazione sostanzialmente economica; in fase di design come in produzione.
+						Se, ipoteticamente, la curva dei costi fosse più piatta, ci comporteremmo in modo completamente differente da come abbiamo sempre fatto.
 						<br />
-						
+						Probabilmente, piuttosto ce pianificare tutto al minimo dettaglio, cercheremmo di rimandare le decisioni, al Last Responsible Moment, semplicemente per avere più tempo a disposizione per indagare sul problema.
 						<br />
-						La buona notizia è che appiattire la curva dei costi è possibile. Non è un risultato che arriva gratuitamente,
-						ma è comunque una cosa possibile. Esistono diverse	tecniche di coding
-						che consentono di rendere economica la modifica del codice.	 Test-Driven development è un esempio, ma in generale lo sono
-						tutte le tecniche che mirano a ridurre l'accoppiamento, incrementare la coesione, evitare la regressione e distribuire la conoscenza. 
-						<br /><br />
-						Questa è la scommessa. E questo, ovviamente, cambia molto il ruolo e gli obiettivi dell'architetto. 
-						<br /><br />
-						L'architetto può passare dall'obiettivo di <em>fare piani</em> all'obiettivo di
-						<em>creare le condizioni per permettere ai piani di svilupparsi</em>,
-						giorno dopo giorno. È uno shift culturale enorme.
-</td>
+						L'architetto può passare dall'obiettivo di <em>produrre piani</em> a quello di
+						<em>creare le condizioni che consentano ai piani di svilupparsi</em>,
+						giorno dopo giorno. E, certo, si tratta di uno shift culturale enorme.</td>
 				</tr>
 				<tr class="odd">
 					<td>27</td>
 					<td>
 						Enterprise Architecture non rifiuta queste tecniche!
 						<br />
-						 La questione non è osteggiare TDD. La questione è: questo è sufficiente a far emergere un'architettura?
-						<br /><br />
-						Si può essere eccellenti muratori e saper erigere case meravigliose e incrollabili. Anzi, è importantissimo che i muratori siano eccellenti.
+						Non bandisce pratiche quali TDD. La questione è: ciò è sufficiente a far <strong>emergere</strong> un'architettura?
+						<br />
+						Si può essere eccellenti muratori e saper erigere case robuste e accoglienti.
+						Anzi, è essenziale affidarsi ad eccellenti muratori.
 						<br />
 						Ma mille bravi muratori non garantiscono una città con una tangenziale senza ingorghi di traffico.
-						<br /><br />
+						<br />
 						Cosa propongono di diverso, i nostri due architetti, per costruire, debuggare e manutenere un sistema informatico con un alto grado di complessità?</td>
 					<td></td>
 				</tr>
@@ -544,24 +520,24 @@
 					<td></td>
 					<td>
 						Al contrario, io ritengo che questo approccio porti a rallentamenti e finger pointing.
-						Con un sistema simile è chiaro che, in una discussione, chi avrà maggiore autorità uscirà sempre vincitore.
-						Anzi, peggio: gli sviluppatori verranno accusati di non essere buoni &quot;team player&quot;, solo perché hanno contestato l'architetto</td>
+						In un contesto del genere, risulta evidente che, in una discussione, colui che è investito di maggiore autorità ne uscirà sempre vincitore.
+						E c'è di peggio: gli sviluppatori verranno accusati di non essere buoni &quot;team player&quot;, solo perché hanno contestato l'architetto.</td>
 				</tr>
 				<tr class="even">
 					<td>30</td>
 					<td></td>
 					<td>
-						Piuttosto, propongo che l'architetto sia coinvolto anche nell'implementazione. È necessario che sia costantemente informato sui cambiamenti e sull'impatto che questi producono sul design.</td>
+						Piuttosto, propongo che l'architetto sia coinvolto anche nella fase implementativa. È necessario che sia costantemente informato sui cambiamenti e sull'impatto che questi producono sul design.</td>
 				</tr>
 				<tr class="odd">
 					<td>31</td>
 					<td>
-						Esasperando le diversità dei due approcci, mi sembra di capire che il nodo della questione è che io propongo la figura di un architetto dedicato</td>
+						Esasperando le diversità dei due approcci, mi sembra di capire che il nodo della questione consista nel fatto che io propongo la figura di un architetto dedicato.</td>
 				</tr>
 				<tr class="even">
 					<td>32</td>
 					<td></td>
-					<td>E io faccio invece leva sulla condivisione della responsabilità</td>
+					<td>E io faccio invece leva sulla condivisione della responsabilità.</td>
 				</tr>
 				<tr class="odd">
 					<td>33</td>
@@ -588,29 +564,26 @@
 					<td>
 						Bene.
 						<br />
-						Ecco, fammi capire perché l'architetto deve restare costantemente informato anche sui dettagli implementativi.</td>
+						Ecco, fammi capire perché l'architetto debba restare costantemente informato anche sui dettagli implementativi.</td>
 					<td></td>
 				</tr>
 				<tr class="even">
 					<td>36</td>
 					<td></td>
 					<td>
-					Certamente.
-					<br />
-					Sì: si capisce molto bene con un <em>Influence Diagram</em>.
-					<br />
-					Considera il rapporto tra il mangiare e il prendere peso. Più mangio, più ingrasso. è una influenza positiva. La rappresento in questo modo:
-					<br />
-					
-					<br /></td>
+						Certamente.
+						<br />
+						E, per spiegarlo, vorrei ricorrere agli <em>influence diagram</em>.
+						<br />
+						Considera il rapporto tra il mangiare e il prendere peso. Più mangio, più ingrasso. è una influenza positiva. La rappresento in questo modo:</td>
 				</tr>
 				<tr class="odd">
 					<td>37</td>
 					<td></td>
 					<td>
-						Il rapporto tra l'esercizio fisico e il peso è opposta: più sport faccio, meno ho problemi di peso.
+						Il rapporto tra l'esercizio fisico e il peso è opposta: più sport pratico, più perdo peso.
 						<br/>
-						Cioè, l'esercizio fisico ha un'influenza negativa sull'aumento di peso. La rappresento sovrapponendo un cerchio alla linea. Mi segui?</td>
+						In questo caso, si tratta di un'influenza negativa e la rappresento sovrapponendo un cerchio alla linea. Mi segui?</td>
 				</tr>
 				<tr class="even">
 					<td>38</td>
@@ -618,37 +591,34 @@
 					<td>
 						Ok, come puoi notare ho rappresentato un circolo vizioso.
 						<br />
-						Parti dalla freccia che entra nel circolo.
-						<br />
-						Leggila in questo modo:
+						Parti dalla freccia che entra nel circolo e leggi il diagramma in questo modo:
 						<br />
 						Più ingrasso, più perdo stima in me stesso.
 						<br />
 						Più perdo stima, più mangio.
 						<br />
-						Più mangio, più ingrasso.
-						<br />
-						E mi ritrovo nuovamente all'ingresso del circolo visioso.</td>
+						Più mangio, più aumento di peso, ritrovandomi nuovamente all'ingresso del circolo visioso.</td>
 				</tr>
 				<tr class="odd">
 					<td></td>
-					<td>Perché mi racconti questo?</td>
+					<td>Scusa, ma perché mi racconti questo?</td>
 					<td></td>
 				</tr>
 				<tr class="even">
 					<td>39</td>
 					<td></td>
 					<td>
-						Perché questo ha molto a che fare con i feedback che un architetto può ricevere. Lascia che ti spieghi. <br />
-						Quì ho rappresentato lo stesso identico circolo vizioso, ma ho usato dei termini che riguardano la gestione di un team. Leggilo così:
+						Ci arrivo.
 						<br />
-						Più pressioni imponi ad un team, più gli sviluppatori faranno cowboy programming. Per esempio, tireranno via sui test, perché non darai loro il tempo;
-						<br /><br />
-						ma il cowboy programming ha un effetti negativo sulla qualità del codice, per cui si produrrà un codice tendenzialmente meno corretto.
-						<br /><br />
-						E, con più errori, è evidente che sarai costretto a far maggiore pressione, per far rispettare le scadenze.
-						<br /><br />
-						È un circolo vizioso.</td>
+						Guarda, quì ho rappresentato lo stesso identico circolo vizioso, ma ho usato dei termini che riguardano il ciclo di sviluppo del software. Leggilo così:
+						<br />
+						Più pressioni vengono imposte al team, più gli sviluppatori praticheranno &quot;cowboy programming&quot;. Probabilmente, la suite di test risulterà carente e di pessima qualità.
+						<br />
+						Il cowboy programming avrà un effetto negativo sulla qualità del codice, ragion per cui si produrrà un codice tendenzialmente meno corretto.
+						<br />
+						Arrivati a questo punto, probabilmente si farà maggior pressione; non so, anche solo per rispettare le scadenze.
+						<br />
+						E, guarda, si tratta di un circolo vizioso.</td>
 				</tr>
 				<tr class="odd">
 					<td></td>
@@ -659,17 +629,17 @@
 					<td>40</td>
 					<td></td>
 					<td>
-						Ecco, arriviamo al punto del perché l'architetto debba essere coinvolto anche nello sviluppo.
+						Ecco, adesso cercherò di mostrarti perchè l'architetto debba essere coinvolto anche nello sviluppo.
 						<br />
 						Questo diagramma di influenza descrive il tuo approccio:
 						<br />
 						Parti dalla freccia in ingresso al diagramma, cioè dalla decisione di produrre molta documentazione.
 						<br />
-						Tanta più documentazione tu architetto produci, minore è il numero di feedback diretti che ricevi;
+						Tanta più documentazione l'aarchitetto produce, minore è il numero di feedback diretti che riceve;
 						<br />
-						Purtroppo, meno feedback ricevi, maggiore sarà il numero di scelte errate compiute dal team.
+						Meno feedback ricevi, maggiore sarà il numero di scelte errate compiute dal team.
 						<br />
-						E, a fronte di un alto numero di scelte sbagliate, ti sarà necessario produrre documentazione.
+						E, a fronte di un alto numero di cattive scelte, ti troverai a produrre ulteriore documentazione.
 						<br />
 						Come vedi, anche in questo caso siamo di fronte ad un circolo vizioso.</td>
 				</tr>
@@ -682,13 +652,12 @@
 					<td>41</td>
 					<td></td>
 					<td>
-						Guarda, ti mostro come sia possibile invertire la tendenza.
+						Beh, devo invertire la tendenza, e ti mostro come approccerei io.
 						<br />
-						Parto dalla decisione di avere molta collaborazione, piuttosto che molta documentazione. Se faccio leva sulla collaborazione, produco molti feedback;
+						Il mio architetto farebbe leva su una collaborazione molto intensiva, piuttosto che sul produrre documentazione.
+						Facendo leva sulla collaborazione, produco molti feedback, riducendo così il numero di scelte errate.
 						<br />
-						Questo riduce il numero di scelte errate.
-						<br />
-						Avere meno scelte errate permette di abbattere il numero di documenti prodotti e, quindi, di avere maggior tempo a disposizione per una collaborazione intensiva.
+						Ed ecco che il ridurre le scelte errate mi consente di abbattere il numero di documenti prodotti e, quindi, di avere maggior tempo a disposizione per la collaborazione intensiva.
 						<br />
 						Come puoi constatare, il modello che propongo alimenta un circolo virtuoso!</td>
 				</tr>
@@ -706,27 +675,26 @@
 						Spesso, al governo centralizzato si accompagna la tendenza a standardizzare e a convergere verso una singola piattaforma tecnologica.
 						<br />
 						Ma l'esperienza ci insegna che non tutti i problemi sono chiodi e, di conseguenza, non tutte le soluzioni sono martelli.
-						<br /><br />
+						<br />
 						Il trend, in questi anni, è di costruire sistemi organizzati come micro-service.
 						<br />
 						Molti team, piuttosto che affidarsi a standard scritti su qualche documento, da qualcuno sopra di loro, preferiscono produrre tool utili che altri sviluppatori possano utilizzare per risolvere problemi simili. 
 						<br />
 						Nascono le API e, assieme a loro, delle &quot;community&quot;.
 						<br />
-						Se ci pensi bene, Amazon™ rappresenta un caso molto significativo.</td>
+						Se ci pensi bene, Amazon&trade; rappresenta un caso molto significativo.</td>
 				</tr>
 				<tr class="odd">
 					<td>43</td>
 					<td>
 						Sono molto d'accordo.
 						<br />
-						E penso sia molto curioso che tu concluda citando Amazon™. 
+						E penso sia molto curioso che tu concluda citando Amazon&trade;.
 						<br />
-						Perché, ricorderai che Amazon™ è passata dall'essere un e-commerce di libri ad una piattaforma di servizi
-						per la decisione illuminata ed autoritaria di un architetto visionario e dispotico.
+						Perché, ricorderai che Amazon&trade; è passata dall'essere un e-commerce di libri ad una piattaforma di servizi per la decisione illuminata ed autoritaria di un architetto visionario e dispotico.
 						<br />
-						Probabilmente, se si fosse aspettato che Amazon™ diventasse una immensa Service Oriented Company,
-						per l'intervento dei suoi singoli sviluppatori, come architettura emergente, oggi non avremmo il &quot;Cloud&quot; di Amazon™.
+						Probabilmente, se si fosse aspettato che Amazon&trade; diventasse una immensa Service Oriented Company,
+						per l'intervento dei suoi singoli sviluppatori, come architettura emergente, oggi non avremmo il &quot;Cloud&quot; di Amazon&trade;.
 						<br />
 						Ma è bello vedere che le nostre visioni, apparentemente così distanti, abbiano alla fine così tanti punti di contatto.</td>
 					<td></td>
@@ -735,24 +703,17 @@
 					<td>44</td>
 					<td></td>
 					<td>
-						Sì. Quindi qual è la conclusione?
+						E' vero, ma a quale conclusione siamo giunti?
 						<br />
-						Che Agile è una visione completamente opposta all'architettura classica? Se si è agile non si
-						può fare Enterprise Architecture?
+						Che &quot;Agile&quot; è una visione diametralmente opposta all'architettura &quot;classica&quot;? Essere &quot;Agile&quot; preclude ogni accesso a &quot;Enterprise Architecture&quot;?
 						<br />
-						Oppure che entrambe le visioni hanno un senso ed affrontano lo stesso problema, da due punti di
-						vista diversi ma compatibili?
+						Non potremmo, invece, semplicemente ammettere che le due visioni affrontano il medesimo problema da due prospettive differenti? E che entrambe, in un certo senso, si completano vicendevolmente?
 						<br />
-						Per esempio, forse è vero che Agile è la risposta per far emergere il design bottom-up,
-						a partire dal dettaglio, mentre Enterprise Architecture cerca di arrivare al design partendo dall'analisi
-						della strategia di business? Forse è vero che c'è bisogno di entrambe le attività, ed il nostro compito è quelle
-						di farle incontrare, a metà strada?
+						Forse, davvero abbiamo bisogno di entrambe le attività, e il nostro compito è quello di farle incontrare; magari, a metà strada.
 						<br />
-						Sinceramente, non lo sappiamo.
-						<br />
-						Se questo talk vi fosse servito anche solo per farvi venire in mente delle domande, abbiamo raggiunto il
-						nostro scopo. Forse abbiamo ancora qualche minuto per farcele.
-					</td>
+						Naturalmente, non abbiamo &quot;LA&quot; risposta.
+						Detto questo, se, ora che siamo giunti al termine del talk, qualcuno di voi si sta ponendo dei quesiti, allora direi che abbiamo raggiunto il nostro obiettivo.
+						E, forse, abbiamo ancora qualche minuto per discuterne assieme.</td>
 				</tr>
 			</tbody>
 		</table>
