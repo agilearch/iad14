@@ -38,13 +38,13 @@
 						<br />
 						Questo sarà un talk un po' particolare, perché cercheremo di sostenere due tesi diametralmente opposte.
 						<br />
-						Io sono Arialdo, e reciterò la parte dell'<strong>enterprise architect</strong>.</td>
+						Io sono Arialdo, e reciterò la parte dell'<strong>architetto tradizionale</strong>.</td>
 					<td></td>
 				</tr>
 				<tr class="even">
 					<td></td>
 					<td></td>
-					<td>Io sono Nicola, e proverò a vestire i panni dell'<strong>agile architect</strong>.</td>
+					<td>Io sono Nicola, e proverò a vestire i panni dell'<strong>architetto agile</strong>.</td>
 				</tr>
 				<tr class="odd">
 					<td>2</td>
@@ -54,14 +54,16 @@
 						<br />
 						Dunque, le metodologie &quot;Agile&quot; sono la risposta ad una visione industriale e taylorista del processo di sviluppo del software.
 						Chiaramente, l'argomento è molto vasto e dibattuto, ma nel corso della sessione cercheremo ti tenere il focus sul tema dell'architettura, facendo scontrare la visione &quot;Agile&quot; con quella, per così dire, più classica.
-						<br /><br />
+						<br />
+						Il problema è che l'architettura è un argomento, diciamocelo pure, tendenzialmente &quot;fuffoso&quot;.
+						<br />
 						Bene, Fowler sostiene che <em>'architetto' ed 'architettura' siano parole terribilmente sovraccaricate di significati</em>&quot;.</td>
 				</tr>
 					<tr class="even">
 					<td>3</td>
 					<td>
 						Eh, cos'è l'archittetura...
-						Provate a chiederlo a tre differenti architetti e otterrete quattro risposte differenti!
+						Provate a chiederlo a tre architetti e otterrete quattro risposte differenti!
 						<br />
 						Questa definizione è, in qualche modo, quanto di più formale si possa trovare in letteratura:
 						<p class="quotation">
@@ -87,11 +89,17 @@
 					<td>5</td>
 					<td>
 						La mia tesi è che, almeno quando si ha a che fare con progetti complessi, un elevato livello di astrazione sia davvero necessario.
+						<br /><br />
+						E mi stupisco che in &quot;Agile&quot; non sia così, perché non si tratta di mettere
+						&quot;<em>gli sviluppatori contro gli architetti</em>&quot;, ma di ottenere una crescita
+						coordinata e armoniosa, di garantire un'<em>integrità concettuale</em>.
+						<br /><br />
+						E, per garantire quest'ultima, in un sistema complesso, è necessario un pensiero centrale.
 						<br />
-						E mi stupisco che in &quot;Agile&quot; non sia così, perché non si tratta banalmente di mettere gli &quot;sviluppatori contro gli architetti&quot;, ma di conseguire una <em>integrità concettuale</em>.
-						<p class="quotation">
-							&quot;<em>Per garantire l'integrità concettuale è necessario un pensiero centrale</em>&quot;.</p>
-						Non sto parlando di una singola persona. Anzi, se possiamo contare su un comitato di persone, tanto di guadagnato.
+						Non parlo necessariamente di una singola persona. Anzi, se possiamo contare su un comitato di persone, tanto di guadagnato.
+						<br />
+						Quando dico che è necessario un pensiero centrale, è perché penso sia molto probabile che i singoli
+						membri del team non abbiano sufficienti competenze per assumere determinate decisioni.
 						<br />
 						Ma perché penso che un pensiero centrale sia necessario?
 						Perché è molto probabile che i singoli membri del team non abbiano sufficienti competenze per 
@@ -106,33 +114,36 @@
 						Un piano, hai detto?
 						<br />
 						Quindi, l'architettura è una ricetta alla quale attenersi scrupolosamente?
-						<br />
-						La qualità di una torta la si valuta assaggiandola. L'aderenza alla ricetta è una metrica molto debole.</p>
+						<p>
+							Tu valuti la qualità di una torta assaggiandola. L'aderenza alla ricetta è una metrica davvero molto debole.</p>
 					</td>
 				</tr>
 					<tr class="even">
 						<td>7</td>
 						<td>
-							Ci mancherebbe!
-							<br />
 							Eppure, una ricetta è necessaria! Le torte non si realizzano mescolando ingredienti a caso.
 							<br />
-							Costruire un sistema enterprise di grandi dimensioni e complessità senza un <strong>Enterprise Architect</strong> è come tentare di costruire una città senza un piano regolatore.
+							Se assaggi una torta che è stata realizzata senza seguire una ricetta scommetto, sono pronto a scommettere che te ne accorgeresti!
+							<br />
+							E, allo stesso modo, costruire un sistema enterprise di grandi dimensioni e complessità senza un <strong>Enterprise Architect</strong> è come tentare di costruire una città senza un piano regolatore.
 							<br />
 							È possibile costruire una città senza un piano?
 							<br />
-							Probabilmente.
-							<br />
-							Andreste a vivere in quella città?
-							<br />
-							Probabilmente no.
-							<br />
-							Ovviamente, un architetto che disegni un piano regolatore non garantisce una città vivibile: semplicemente, ne aumenta le probabilità.
-						</td>
-						<td></td>
-					</tr>
+							Probabilmente.</td>
+				</tr>
 				<tr class="odd">
 					<td>8</td>
+					<td>
+						Andreste a vivere in quella città?
+						<br />
+						Probabilmente no.
+						<br />
+						Ovviamente, un architetto che disegni un piano regolatore non garantisce una città vivibile: semplicemente, ne aumenta le probabilità.
+					</td>
+					<td></td>
+				</tr>
+				<tr class="even">
+					<td>9</td>
 					<td></td>
 					<td>
 						La similitudine tra l'architettura civile e quella del software è molto ricorrente.
@@ -155,7 +166,7 @@
 						E, mi spiace: garantire l'<em>integrità concettuale</em> non offre alcuna tutela in questo senso!</td>
 				</tr>
 				<tr class="odd">
-					<td>9</td>
+					<td>10</td>
 					<td>
 						Cosa significa questo? Che l'evoluzione di Google&trade; è frutto di design emergente, a colpi di TDD?
 						<br />
@@ -192,24 +203,41 @@
 						<br />
 						Hai una rete infinita di dipendenze e, ironicamente, siamo noi stessi ad averla prodotta, anno dopo anno.
 						<br />
-						Ognuna delle connessioni era perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente
-						contorto che risulta impossibile apportare modifiche in un punto senza provocare danni in un altro.
-						<br />
-						Ecco, è qui che opera <em>Enterprise Architecture</em>: aiuta a definire un ecosistema IT organizzato in modo che ognuno disponga della libertà di apportare miglioramenti, in modo da garantire margini per l'innovazione. L'architettura fa in modo che l'ecosistema resti comunque robusto e flessibile.
+						Ognuna delle connessioni era perfettamente ragionevole, nel momento in cui è stata introdotta, ma il risultato finale è talmente contorto che risulta impossibile apportare modifiche in un punto senza provocare danni in un altro.</td>
+				</tr>
+				<tr class="even">
+					<td></td>
+					<td></td>
+					<td>
+						Capperi, ho l'impressione che qualcuno si sia divertito a violare deliberatamente i principi cardine di Object Oriented: altissimo accoppiamento, bassissima coesione. La reificazione dello &quot;spaghetti code&quot;.
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>11</td>
+					<td>
+						Ecco, è qui che opera <em>Enterprise Architecture</em>: aiuta a creare un ecosistema IT organizzato in modo che ognuno disponga della libertà di apportare miglioramenti, in modo da garantire margini per l'innovazione. L'architettura fa in modo che l'ecosistema resti comunque robusto e flessibile.
 						Proprio per questo motivo è richiesta l'esistenza di un processo che mantenga tutto ordinato.</p>
-						Ecco: non puoi pensare che un'azienda come Google&trade;, quando decide di aggredire il mercato mobile e inizia a sviluppare 
-						un sistema operativo come Android, non parta da una strategia aziendale, pensata come piano di business dall'amministratore
-						delegato e, poi, non la trasformi in una road map tecnologica.
+					<td></td>
+				</tr>
+				<tr class="odd">
+					<td>12</td>
+					<td>
+						Non puoi pensare che un'azienda come Google&trade;, quando decide di aggredire il mercato mobile e inizia a sviluppare un sistema operativo come Android, non parta da una strategia di business, disegnata dall'amministratore delegato e, poi non la trasformi in una road map tecnologica. L'architettura serve a quello: c'è un legame a doppio filo tra
+						strategia di business e strategia IT. Le scelte di business dell'azienda guidano quelle tecnologiche, 
+						ma sono proprio i risultati tecnologici che consentono al business di realizzare
+						le proprie strategie.
+						<br />L'archittetura, quindi, va anche un po' al di là del codice: serve ad
+						allineare tecnologia e business.
 						<br />
-						Il controllo di un ristretto gruppo di persone è molto più sensato di una totale mancanza di coordinamento.
-						<br /><br />
+						E in questo senso, la centralità del pensiero è molto più sensato di una totale mancanza di coordinamento.
+						<br />
 						Dai, non puoi credere che tutto si riduca a far emergere l'architettura con cicli di red/green/refactor.
-						<br /><br />
+						<br />
 						O è questo, quello che sostiene Agile?
 						<td></td>
 				</tr>
 				<tr class="even">
-					<td>10</td>
+					<td>13</td>
 					<td></td>
 					<td>
 						No, non è questo.
@@ -235,13 +263,13 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>11</td>
+					<td>14</td>
 					<td></td>
 						<td>
 						  Guarda, stenterai a crederlo, ma l'autore è, in realtà, <em>Ivar Jacobson</em>, uno dei maggiori &quot;contributor&quot; di UML, uno strumento piuttosto osteggiato da &quot;Agile&quot;.
 				</tr>
 				<tr class="odd">
-					<td>12</td>
+					<td>15</td>
 					<td>
 						Ok, capisco.
 						<br />
@@ -286,7 +314,7 @@
 						L'idea secondo la quale non vi sia effettivo bisogno di ruoli specifici - che in fondo, di fronte alla complessità, <em>siamo tutti uguali</em> - è molto romantica, ma manca di fondamento scientifico e rischia di apparire naive.</td>
 				</tr>
 				<tr class="even">
-					<td>12</td>
+					<td>16</td>
 					<td></td>
 					<td>
 						A proposito di &quot;sviluppatori che dovrebbero occuparsi dello sviluppo di un singolo componente&quot;, vorrei raccontarti un aneddoto, che dimostra quanto, invece, l'architettura dovrebbe essere qualcosa che vada a coinvolgere tutti.
@@ -345,7 +373,7 @@
 						Possiamo riassumere asserendo che facciamo riferimento a due figure molto differenti di architetto?</td>
 				</tr>
 				<tr class="odd">
-					<td>14</td>
+					<td>17</td>
 					<td>
 						Sì, il mio architetto è la persona che prende le decisioni importanti, quelle di più alto livello.
 						E si sarebbe assicurato che fosse stato utilizzato un database che supportasse transazioni &quot;full-ACID&quot;, proprio per evitare incidenti come quello di &quot;Flexcoin&quot;.
@@ -354,7 +382,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>15</td>
+					<td>18</td>
 					<td></td>
 					<td>
 						Il mio lo definirei <em>Pragmatic Architect</em>.
@@ -362,7 +390,7 @@
 						E, il mio architetto, non così interessato a prendere personalmente decisioni.</td>
 				</tr>
 				<tr class="odd">
-					<td>16</td>
+					<td>19</td>
 					<td></td>
 					<td>
 						L'attività più importante del mio architetto è quella di fare da mentore per i team,
@@ -371,13 +399,13 @@
 						Incrementare le abilità dei team consente all'architetto di svincolarsi dall'incombenza di fungere da solo &quot;decision maker&quot; e rimuove il rischio di gravare sull'intero processo come &quot;collo di bottiglia&quot;.</td>
 				</tr>
 				<tr class="even">
-					<td>17</td>
+					<td>20</td>
 					<td></td>
 					<td>
 						La metafora che mi sembra più appropriata è quella proposta da Mike Two: l'architetto come una &quot;guida alpina&quot;; è la persona più skillata, che può insegnare agli altri membri come muoversi ed è sempre un riferimento nei momenti di maggior difficoltà.</td>
 				</tr>
 				<tr class="odd">
-					<td>18</td>
+					<td>21</td>
 					<td></td>
 					<td>
 						In questo senso, credo che il valore di un architetto sia inversamente proporzionale alla quantità di decisioni che è costretto a prendere.
@@ -388,7 +416,7 @@
 					</td>
 				</tr>
 				<tr class="even">
-					<td>19</td>
+					<td>22</td>
 					<td>Quindi, stiamo parlando di una figura che si adopera per rendersi superflua?</td>
 					<td></td>
 				</tr>
@@ -398,7 +426,7 @@
 					<td>In un certo senso, sì.</td>
 				</tr>
 				<tr class="even">
-					<td>20</td>
+					<td>23</td>
 					<td>
 						A me appare tutto piuttosto fumoso e un po' distante dalle reali esigenze delle aziende enterprise, ma ne colgo il senso.
 						<br />
@@ -413,7 +441,7 @@
 						Sapete perché credo che un lavoro di design up-front sia davvero molto importante?</td>
 				</tr>
 				<tr class="odd">
-					<td>21</td>
+					<td>24</td>
 					<td>
 						Perché esistono delle decisioni che vanno prese con largo anticipo, prima che sia troppo tardi; prima di scoprire che le fondamenta sulle quali il progetto si reggeva erano inconsistenti. 
 						<br />
@@ -425,7 +453,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>22</td>
+					<td>25</td>
 					<td></td>
 					<td>
 						Probabilmente è questo il punto cruciale: si possono vedere le metodologie &quot;Agili&quot; come un sistema volto al contenimento della complessità e alla riduzione dell'irreversibilità.
@@ -445,13 +473,13 @@
 						Chi ritiene di poterlo gestire con la pianificare, produce questo:</td>
 				</tr>
 				<tr class="odd">
-					<td>23</td>
+					<td>26</td>
 					<td></td>
 					<td>
 						Sfortunatamente, per quante energie si investano nel predirre il futuro, la strada che ci troveremo a percorrere assomiglierà più a questa:</td>
 				</tr>
 				<tr class="even">
-					<td>24</td>
+					<td>27</td>
 					<td></td>
 					<td>
 						Per questo motivo, il futuro ci apparirà così:
@@ -466,7 +494,7 @@
 						Questa è l'essenza di XP: il cambiamento è l'unica costante.</em>&quot;.</td>
 				</tr>
 				<tr class="odd">
-					<td>25</td>
+					<td>28</td>
 					<td>
 						Di nuovo, mi sembra un po' troppo vago.
 						<br />
@@ -480,7 +508,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>26</td>
+					<td>29</td>
 					<td></td>
 					<td>
 						La scommessa di <em>eXtreme Programming</em> è proprio questa: se riuscissimo ad appiattire
@@ -494,7 +522,7 @@
 						giorno dopo giorno. E, certo, si tratta di uno shift culturale enorme.</td>
 				</tr>
 				<tr class="odd">
-					<td>27</td>
+					<td>30</td>
 					<td>
 						Enterprise Architecture non rifiuta queste tecniche!
 						<br />
@@ -509,14 +537,14 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>28</td>
+					<td>31</td>
 					<td>
 						Io suggerisco che si ricorra ad un'autorità, un esperto che possa occuparsi di congegnare il sistema senza doversi occupare dei dettagli implementativi, perché è evidente che il suo tempo sarà particolarmente prezioso.
 						Fintanto che il team sarà in grado di seguire le linee guida, la qualità del medesimo verrà garantita.</td>
 					<td></td>
 				</tr>
 				<tr class="odd">
-					<td>29</td>
+					<td>32</td>
 					<td></td>
 					<td>
 						Al contrario, io ritengo che questo approccio porti a rallentamenti e finger pointing.
@@ -524,33 +552,33 @@
 						E c'è di peggio: gli sviluppatori verranno accusati di non essere buoni &quot;team player&quot;, solo perché hanno contestato l'architetto.</td>
 				</tr>
 				<tr class="even">
-					<td>30</td>
+					<td>33</td>
 					<td></td>
 					<td>
 						Piuttosto, propongo che l'architetto sia coinvolto anche nella fase implementativa. È necessario che sia costantemente informato sui cambiamenti e sull'impatto che questi producono sul design.</td>
 				</tr>
 				<tr class="odd">
-					<td>31</td>
+					<td>34</td>
 					<td>
 						Esasperando le diversità dei due approcci, mi sembra di capire che il nodo della questione consista nel fatto che io propongo la figura di un architetto dedicato.</td>
 				</tr>
 				<tr class="even">
-					<td>32</td>
+					<td>35</td>
 					<td></td>
 					<td>E io faccio invece leva sulla condivisione della responsabilità.</td>
 				</tr>
 				<tr class="odd">
-					<td>33</td>
+					<td>36</td>
 					<td>Il mio approccio pone maggiore focus sul design-upfront.</td>
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>34</td>
+					<td>37</td>
 					<td></td>
 					<td>Il mio su un'architettura evolutiva.</td>
 				</tr>
 				<tr class="odd">
-					<td>35</td>
+					<td>38</td>
 					<td>Oppure, per usare le parole del &quot;Manifesto Agile&quot;, io faccio affidamento sulla <em>Comprehensive Documentation</em>.</td>
 					<td></td>
 				</tr>
@@ -568,7 +596,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>36</td>
+					<td>39</td>
 					<td></td>
 					<td>
 						Certamente.
@@ -578,7 +606,7 @@
 						Considera il rapporto tra il mangiare e il prendere peso. Più mangio, più ingrasso. è una influenza positiva. La rappresento in questo modo:</td>
 				</tr>
 				<tr class="odd">
-					<td>37</td>
+					<td>40</td>
 					<td></td>
 					<td>
 						Il rapporto tra l'esercizio fisico e il peso è opposta: più sport pratico, più perdo peso.
@@ -586,7 +614,7 @@
 						In questo caso, si tratta di un'influenza negativa e la rappresento sovrapponendo un cerchio alla linea. Mi segui?</td>
 				</tr>
 				<tr class="even">
-					<td>38</td>
+					<td>41</td>
 					<td></td>
 					<td>
 						Ok, come puoi notare ho rappresentato un circolo vizioso.
@@ -605,7 +633,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>39</td>
+					<td>42</td>
 					<td></td>
 					<td>
 						Ci arrivo.
@@ -626,7 +654,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>40</td>
+					<td>43</td>
 					<td></td>
 					<td>
 						Ecco, adesso cercherò di mostrarti perchè l'architetto debba essere coinvolto anche nello sviluppo.
@@ -649,7 +677,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>41</td>
+					<td>44</td>
 					<td></td>
 					<td>
 						Beh, devo invertire la tendenza, e ti mostro come approccerei io.
@@ -667,7 +695,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>42</td>
+					<td>45</td>
 					<td></td>
 					<td>
 						Agile propone: <em>Gli individui e le interazioni, più che i processi e gli strumenti</em>.
@@ -685,7 +713,7 @@
 						Se ci pensi bene, Amazon&trade; rappresenta un caso molto significativo.</td>
 				</tr>
 				<tr class="odd">
-					<td>43</td>
+					<td>46</td>
 					<td>
 						Sono molto d'accordo.
 						<br />
@@ -700,7 +728,7 @@
 					<td></td>
 				</tr>
 				<tr class="even">
-					<td>44</td>
+					<td>47</td>
 					<td></td>
 					<td>
 						E' vero, ma a quale conclusione siamo giunti?
