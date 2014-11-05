@@ -1,3 +1,8 @@
+FEEDBACK Arialdo:
+Ho l'impressione che la slide con Derpina, lato mio, abbia troppo testo.
+
+
+
 FEEDBACK NICOLA:
  -> È saltata la parte sulla differenza tra architettura tradizionale
     e architettura del software. Ovvero, l'architettura tradizionale puo contare su anni secoli di conoscenza. L'architettura del software, su poche decadi.
